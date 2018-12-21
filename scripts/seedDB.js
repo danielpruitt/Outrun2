@@ -10,15 +10,21 @@ mongoose.connect(
 
 const beerSeed = [
     {
-        beer: "",
-        type: "",
-        synopsis:"",
+        beer: "First Beer",
+        type: "Lager",
+        synopsis:"It's basically a better Pabst",
+        date: new Date(Date.now())
+    },
+    {
+        beer: "Will's Smelly Foot",
+        type: "Lager",
+        synopsis:"It's basically a better Pabst",
         date: new Date(Date.now())
     }
 ]
-db.Gift
+db.Beer
     .remove({})
-    .then(() => db.Beer.collection.insertMany(giftSeed))
+    .then(() => db.Beer.collection.insertMany(beerSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
