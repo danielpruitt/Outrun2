@@ -1,3 +1,87 @@
+/* referring to the header component in React. cascading from <Header> to <h2> */
+.header {
+  background-image: url('./images/headerlogo.png');
+  background-size: cover;
+  height: 600px;
+}
+
+/* referring to the container used in the header component with ID HeaderContainer */
+#HeaderContainer {
+  /* width: 80%; */
+  margin-left: 12%;
+  margin-right: 12%;
+  height: 600px;
+  position: relative;
+  
+}
+
+
+/* Joint class tag for both <h2> tags in the Header Component */
+.neon {
+  color: #BC1682;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
+
+/* webkit and mozilla animations for joint <h2> tag class from header component.
+used to make the pulse of the neon sign and turns the font color white. */
+.neon:hover {
+  color: #ffffff;
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+
+/* class selector specific to the <p> containing beers text */
+.beersContent {
+  font-size: 46px;
+  position: absolute;
+  text-align: left;
+  top: 30%;
+
+}
+
+/* class selector specific to the <p> containing our story text */
+.ourStory {
+  font-size: 46px;
+  position: absolute;
+  right: 13%;
+  top: 30%;
+}
+
+/* applied styling for Webkit when hovering over the text. */
+@-webkit-keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+/* applied styling for moz when hovering over the text. */
+@-moz-keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+/* defining @keyframes used for text supplied by the Header Component */
+@keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
 .gradient {
   background-color: #222222;
   background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
