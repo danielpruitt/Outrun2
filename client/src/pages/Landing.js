@@ -10,10 +10,6 @@ import Parallax from "../Components/Parallax/Parallax";
 const Landing = () => (
     <div>
     
-        <Parallax
-            image={require("../images/OBC_NeonSign_Logotype.jpg")}
-        />
-
         {/* Our Beers */}
         <Section>
             <Container>

@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from "./pages/Landing";
 import BeerLog from "./pages/BeerLog";
 import NoMatch from "./pages/NoMatch";
-import Navbar from "./Components/Navbar/Navbar";
+import Header from './Components/Header/header';
 import './App.css';
 
 const App = () =>
   <Router>
     <div>
-      <Navbar/>
+      <Header />
       <Switch>
         {/* <PrivateRoute exact path="/" component={Main} /> */}
         <Route exact path="/" component={Landing} />
