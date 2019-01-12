@@ -6,6 +6,7 @@ import Form from "../Components/Form/Form";
 import Textarea from "../Components/Form/Textarea";
 import Button from "../Components/Button/Button";
 
+
 import API from "../utils/API";
 
 
@@ -51,8 +52,8 @@ class BeerLog extends Component {
 
     };
 
-    //--------------------------------------------------//
 
+    //--------------------------------------------------//
     // LOADER
     loadSaved = () => {
         API.getBeers()
@@ -117,5 +118,4 @@ class BeerLog extends Component {
     }
 
 };
-
 export default BeerLog;

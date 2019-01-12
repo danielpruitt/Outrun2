@@ -1,7 +1,7 @@
 import React from "react";
 
 const Section = ({children}) => (
-    <div className="section">
+    <div className="section gradient">
         {children}
     </div>
 );
