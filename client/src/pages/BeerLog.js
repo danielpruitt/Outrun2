@@ -1,10 +1,11 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Container from "../Components/Grid/Container";
 import Col from "../Components/Grid/Col";
 import Row from "../Components/Grid/Row";
 import Form from "../Components/Form/Form";
 import Textarea from "../Components/Form/Textarea";
-import Button from "../Components/Button/Button"
+import Button from "../Components/Button/Button";
+
 
 import API from "../utils/API";
 
@@ -51,8 +52,8 @@ class BeerLog extends Component {
 
     };
 
-    //--------------------------------------------------//
 
+    //--------------------------------------------------//
     // LOADER
     loadSaved = () => {
         API.getBeers()
