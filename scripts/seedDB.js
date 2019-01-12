@@ -12,13 +12,17 @@ const beerSeed = [
     {
         beer: "First Beer",
         type: "Lager",
-        synopsis:"It's basically a better Pabst",
+        ibu: "4",
+        abv : "5.2",
+        details:"It's basically a better Pabst",
         date: new Date(Date.now())
     },
     {
         beer: "Will's Smelly Foot",
-        type: "Lager",
-        synopsis:"It's basically a better Pabst",
+        type: "IPA",
+        ibu: "88",
+        abv : "10",
+        details:"It's basically a better Pabst",
         date: new Date(Date.now())
     }
 ]
