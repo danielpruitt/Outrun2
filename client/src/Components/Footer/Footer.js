@@ -12,12 +12,15 @@ const Footer = () => (
 
                 <h1 className="center-align">
                     <i className="fab fa-instagram"></i>
+                    <h5>@OutrunBrewingCo</h5>
                 </h1>
                 <h1 className="center-align">
                     <i className="fab fa-facebook-square"></i>
+                    <h5>facebook.com/OutrunBrewingCo</h5>
                 </h1>
                 <h1 className="center-align">
                     <i className="fab fa-twitter-square"></i>
+                    <h5>@OutrunBrewingCo</h5>
                 </h1>
             </Col>
 
