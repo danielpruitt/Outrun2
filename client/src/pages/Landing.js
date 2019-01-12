@@ -4,6 +4,7 @@ import Container from "../Components/Grid/Container";
 import Row from "../Components/Grid/Row";
 import Section from "../Components/Grid/Section";
 import Parallax from "../Components/Parallax/Parallax";
+import Footer from "../Components/Footer/Footer";
 
 
 
@@ -30,7 +31,7 @@ const Landing = () => (
         </Section>
 
         <Parallax
-            image={require("../images/OBC_NeonSign_Logotype.jpg")}
+            image={require("../images/brickwall.jpg")}
         />
 
         {/* Our Story */}
@@ -59,7 +60,7 @@ Normally, both your asses would be dead as fucking fried chicken, but you happen
         </Section>
 
         <Parallax
-            image={require("../images/OBC_NeonSign_Logotype.jpg")}
+            image={require("../images/brickwall.jpg")}
         />
 
         {/* Location: need address and maybe add in google maps */}
@@ -78,7 +79,7 @@ Normally, both your asses would be dead as fucking fried chicken, but you happen
         </Section>
 
         <Parallax
-            image={require("../images/OBC_NeonSign_Logotype.jpg")}
+            image={require("../images/brickwall.jpg")}
         />
 
         {/* Contact */}
@@ -95,6 +96,13 @@ Normally, both your asses would be dead as fucking fried chicken, but you happen
                 </Row>
             </Container>
         </Section>
+
+        <Parallax
+            image={require("../images/brickwall.jpg")}
+        />
+
+        {/* footer, nothing below this */}
+        <Footer />
 
     </div>
 
