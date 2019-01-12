@@ -3,7 +3,6 @@ import Col from "../Components/Grid/Col";
 import Container from "../Components/Grid/Container";
 import Row from "../Components/Grid/Row";
 import Section from "../Components/Grid/Section";
-import Navbar from "../Components/Navbar/Navbar";
 import Parallax from "../Components/Parallax/Parallax";
 
 
