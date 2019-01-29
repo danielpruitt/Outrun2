@@ -2,47 +2,59 @@ import React from "react";
 import Row from "../Grid/Row"
 import Col from "../Grid/Col";
 
-
 const Footer = () => (
     <div className="section gradient">
-        <Row>
+        <div className="front" >
 
-            {/* insta, facebook, twitter */}
-            <Col size="s4">
+            <Row>
 
-                <h1 className="center-align">
-                    <i className="fab fa-instagram"></i>
-                    <h5>@OutrunBrewingCo</h5>
-                </h1>
-                <h1 className="center-align">
-                    <i className="fab fa-facebook-square"></i>
-                    <h5>facebook.com/OutrunBrewingCo</h5>
-                </h1>
-                <h1 className="center-align">
-                    <i className="fab fa-twitter-square"></i>
-                    <h5>@OutrunBrewingCo</h5>
-                </h1>
-            </Col>
+                {/* insta, facebook, twitter */}
+                <Col size="s4">
+                    <div className="center-align">
+                        <h1>
+                            <i className="fab fa-instagram"></i>
+                        </h1>
 
-            {/* DeerLogo, may need a color change, actually it probably will */}
-            <Col size="s4">
-                <img className="center responsive-img" src={require("../../images/Outrun_Gazelle.JPG")} alt="Outrun Gazelle" />
-            </Col>
+                        <h5>@OutrunBrewingCo</h5>
 
-            <Col size="s1" />
-            {/* location and phone and stuff */}
-            <Col size="s3">
-                <br/>
-                <div className="left-align">
-                    <h5>188 Our Road</h5>
-                    <h5>Stone Mountain, Ga 3000something</h5>
-                    <h5>770-867-5309</h5>
-                </div>
-                
-            </Col>
+                        <h1>
+                            <i className="fab fa-facebook-square"></i>
+                        </h1>
 
-        </Row>
+                        <h5>facebook.com/OutrunBrewingCo</h5>
+
+                        <h1>
+                            <i className="fab fa-twitter-square"></i>
+                        </h1>
+
+                        <h5>@OutrunBrewingCo</h5>
+                    </div>
+                </Col>
+
+                {/* DeerLogo, may need a color change, actually it probably will */}
+                <Col size="s4">
+                    <img className="center responsive-img" src={require("../../images/Outrun_Gazelle.JPG")} alt="Outrun Gazelle" />
+                </Col>
+
+                <Col size="s1" />
+                {/* location and phone and stuff */}
+                <Col size="s3">
+                    <br />
+                    <div className="left-align">
+                        <h5>188 Our Road</h5>
+                        <h5>Stone Mountain, Ga 3000something</h5>
+                        <h5>770-867-5309</h5>
+                    </div>
+
+                </Col>
+
+            </Row>
+        </div>
+    
+
+
     </div>
+
 
 );
 

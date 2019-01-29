@@ -1,19 +1,14 @@
 import React from "react";
 import Particles from "react-particles-js";
 
-const Section = ({ children }) => (
-
-
-    <div className="section">
-    {children}
-
-        <div className="particlesBehind ">
-
+const Body = () => (
+    <div>
+        <body class="behind">
             <Particles
                 params={{
                     "particles": {
                         "number": {
-                            "value": 72,
+                            "value": 50,
                             "density": {
                                 "enable": true,
                                 "value_area": 600
@@ -31,6 +26,11 @@ const Section = ({ children }) => (
                             "polygon": {
                                 "nb_sides": 3
                             },
+                            "image": {
+                                "src": "img/github.svg",
+                                "width": 100,
+                                "height": 100
+                            }
                         },
                         "opacity": {
                             "value": 0.197296252160394,
@@ -43,7 +43,7 @@ const Section = ({ children }) => (
                             }
                         },
                         "size": {
-                            "value": 6,
+                            "value": 5,
                             "random": true,
                             "anim": {
                                 "enable": false,
@@ -117,13 +117,9 @@ const Section = ({ children }) => (
                 }
                 }
             />
-
-
-
-        </div>
-
+        </body>
     </div>
 
 );
 
-export default Section;
+export default Body;
