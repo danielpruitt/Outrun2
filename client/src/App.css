@@ -1,30 +1,103 @@
+/* new fonts from files */
+@font-face { 
+  font-family: "PalmCanyonDrive";
+  src: url("./fonts/PalmCanyonDrive-Trial.otf ");
+  /* src: url("./fonts/PalmCanyonDrive-Trial.otf")format("opentype"),("./fonts/palmcanyondrive-trial-webfont.svg")format("svg"),("./fonts/palmcanyondrive-trial-webfont.woff")format("woff"); */
+}
+
+@font-face { 
+  font-family: "Enjoy";
+  src: url("./fonts/Enjoy Personal Use.otf");
+  /* src: url("./fonts/PalmCanyonDrive-Trial.otf")format("opentype"),("./fonts/palmcanyondrive-trial-webfont.svg")format("svg"),("./fonts/palmcanyondrive-trial-webfont.woff")format("woff"); */
+}
+
+@font-face { 
+  font-family: "Lazer84";
+  src: url(./fonts/Lazer84.ttf);
+}
+@font-face { 
+  font-family: "Summer85";
+  src: url(./fonts/summer85.ttf);
+}
+
+/* end new fonts */
+
+/* standard class for header fonts, neon flash is on but curosr does not change */
+.lazer84 {
+  color: #BC1682;
+  /* color: white; */
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family:'Lazer84';
+  letter-spacing: 8px;
+  font-style:italic;
+  text-shadow: 2px 2px 5px #6c0e4b;
+}
+
+/* border under headers, can be deleted or added to  */
+.border-bottom { 
+  border-bottom: 2px solid #2b2b2b;
+  box-shadow: 0px 1px #6c0e4b
+}
+
+
+/* background image is being brought in through the parallax component */
 /* referring to the header component in React. cascading from <Header> to <h2> */
+
 .header {
   background-image: url('./images/headerlogo.png');
   background-size: cover;
   height: 600px;
 }
-
 /* referring to the container used in the header component with ID HeaderContainer */
+
 #HeaderContainer {
-  /* width: 80%; */
+  width: 80%; 
   margin-left: 12%;
   margin-right: 12%;
   height: 600px;
   position: relative;
   
 }
+.z {
+  z-index: -1;
+}
+/* testing Particle js */
+body{
+  background-color: #2b2b2b;
+}
+.particlesBehind canvas {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} 
 
+/* behind class is testing the particles as part of the background canvas */
+
+
+/* ============================================================ */
 
 /* Joint class tag for both <h2> tags in the Header Component */
 .neon {
-  color: #BC1682;
-  text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
+color: #BC1682;
+/* color: white; */
+text-decoration: none;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+transition: all 0.5s;
 
+font-family:'Lazer84';
+letter-spacing: 8px;
+/* font-size: 200em; */
+font-style:italic;
+/* cursor hover */
+cursor: pointer;
 }
+
+
 
 /* webkit and mozilla animations for joint <h2> tag class from header component.
 used to make the pulse of the neon sign and turns the font color white. */
@@ -34,29 +107,41 @@ used to make the pulse of the neon sign and turns the font color white. */
   -moz-animation: neon6 1.5s ease-in-out infinite alternate;
   animation: neon6 1.5s ease-in-out infinite alternate;
 }
+/* for Lazer headers webkit and mozilla animations for joint <h2> tag class from header component.
+used to make the pulse of the neon sign and turns the font color white. */ 
+.lazer84:hover {
+  color: #ffffff;
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
 
-
+/* in major container */
 /* class selector specific to the <p> containing beers text */
 .beersContent {
   font-size: 46px;
   position: absolute;
-  text-align: left;
+  left:12%;
   top: 30%;
 
 }
 
 /* class selector specific to the <p> containing our story text */
+/* absolute positioning needs to be changed so that the actual text doesn't overflow with the image  */
 .ourStory {
   font-size: 46px;
+  text-align: right;
   position: absolute;
-  right: 13%;
+  right: 5%;
   top: 30%;
 }
+
+/* end in major container */
 
 /* applied styling for Webkit when hovering over the text. */
 @-webkit-keyframes neon6 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px # , 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
@@ -82,8 +167,8 @@ used to make the pulse of the neon sign and turns the font color white. */
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
   }
 }
-.gradient {
-  background-color: #222222;
-  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
 
+/* section paragraphs */
+p {
+  color: white
 }
