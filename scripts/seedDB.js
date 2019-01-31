@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
     process.env.MONGODB_URI ||
-    "mongodb://localhost/beerlis"
+    "mongodb://localhost/beerlist"
 );
 
 const beerSeed = [
