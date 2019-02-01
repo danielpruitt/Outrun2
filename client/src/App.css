@@ -172,3 +172,11 @@ used to make the pulse of the neon sign and turns the font color white. */
 p {
   color: white
 }
+
+.card p {
+  color: black
+}
+
+footer { 
+  color:white
+}

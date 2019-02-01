@@ -8,6 +8,7 @@ import Button from "../Components/Button/Button";
 
 
 import API from "../utils/API";
+import RevealCard from "../Components/Card/Card";
 
 
 class BeerLog extends Component {
@@ -30,7 +31,7 @@ class BeerLog extends Component {
 
     componentDidMount() {
         this.loadSaved();
-        console.log(this.state.allBeers)
+
     };
 
     //--------------------------------------------------//
@@ -49,6 +50,7 @@ class BeerLog extends Component {
     // handle submission of the form
     handleSubmit = (event) => {
         event.preventDefault();
+        console.log(this.state)
 
     };
 
@@ -57,9 +59,20 @@ class BeerLog extends Component {
     // LOADER
     loadSaved = () => {
         API.getBeers()
-        .then(res => this.setState({allBeers: res.data})
+        .then(res => 
+        
+            this.setState({
+                allBeers: res.data,
+                beerName: "",
+                type: "",
+                ibu: "",
+                details: "",
+                abv: "",
+                image1: "",
+            })
+        )
         .catch(err => console.log(err))
-        );
+        
     };
 
     render() {
@@ -112,6 +125,28 @@ class BeerLog extends Component {
                     <p> ibu: {this.state.ibu}</p>
                     <p> abv: {this.state.abv}</p>
 
+                </div>
+
+                <div> 
+                    {/* set cards here with the existing beers  */}
+                    <Container>
+                        <Row>
+                            {this.state.allBeers.map(beer => (
+                                <Col size="s6">
+                                    <RevealCard
+                                    image={require("../images/beerCan.jpg")}
+                                    beerName={beer.beer}
+                                    details={beer.details}
+                                    abv={beer.abv}
+                                    type={beer.type}
+                                    ibu={beer.ibu}
+                                    />
+                                </Col>
+
+                            ))}
+                        </Row>
+                    </Container>
+                    {/* make sure there's a delete function */}
                 </div>
             </div>
         )

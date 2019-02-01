@@ -10,7 +10,7 @@ const Footer = () => (
 
                 {/* insta, facebook, twitter */}
                 <Col size="s4">
-                    <div className="center-align">
+                    <div className="center-align white-text">
                         <h1>
                             <i className="fab fa-instagram"></i>
                         </h1>
@@ -40,7 +40,7 @@ const Footer = () => (
                 {/* location and phone and stuff */}
                 <Col size="s3">
                     <br />
-                    <div className="left-align">
+                    <div className="left-align white-text">
                         <h5>188 Our Road</h5>
                         <h5>Stone Mountain, Ga 3000something</h5>
                         <h5>770-867-5309</h5>
