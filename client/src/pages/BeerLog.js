@@ -5,8 +5,6 @@ import Row from "../Components/Grid/Row";
 import Form from "../Components/Form/Form";
 import Textarea from "../Components/Form/Textarea";
 import Button from "../Components/Button/Button";
-
-
 import API from "../utils/API";
 import RevealCard from "../Components/Card/Card";
 
@@ -14,26 +12,45 @@ import RevealCard from "../Components/Card/Card";
 class BeerLog extends Component {
 
     state = {
-        name: "",
+        beerName: "",
         type: "",
         ibu: "",
         details: "",
         abv: "",
-        image1: "",
-        image2: "",
+        image: "",
+        id:"",
         allBeers: []
     }
 
-    //componentDidMount will load the beers that are already there
-    // there needs to be a delet function to delete the loaded beers
-    // We should have a way to keep the beers in the database but not show on the website.
-    // maybe a boolean that is true for showing and false for not 
-
     componentDidMount() {
+        
         this.loadSaved();
 
     };
 
+
+
+    //--------------------------------------------------//
+    // LOADER
+    loadSaved = () => {
+        API.getBeers()
+        .then(res => 
+        
+            this.setState({
+                allBeers: res.data,
+                beerName: "",
+                type: "",
+                ibu: "",
+                details: "",
+                abv: "",
+                image: "",
+                _id:""
+            })
+        )
+        .catch(err => console.log(err))
+
+        
+    };
     //--------------------------------------------------//
     // HANDLERS
     // handles the input change in a give field. 
@@ -50,31 +67,32 @@ class BeerLog extends Component {
     // handle submission of the form
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state)
-
-    };
-
-
-    //--------------------------------------------------//
-    // LOADER
-    loadSaved = () => {
-        API.getBeers()
-        .then(res => 
-        
-            this.setState({
-                allBeers: res.data,
-                beerName: "",
-                type: "",
-                ibu: "",
-                details: "",
-                abv: "",
-                image1: "",
+        console.table(this.state);
+        if(this.state.beerName && this.state.type && this.state.abv) {
+            API.saveBeer({
+                name: this.state.beerName,
+                type: this.state.type,
+                ibu: this.state.ibu,
+                details: this.state.details,
+                abv: this.state.abv,
+                image: this.state.image
             })
-        )
-        .catch(err => console.log(err))
-        
+            .then(res => this.loadSaved())
+            .catch(err => console.log(err + "error in the form submit"));
+        }
+        this.setState({
+            beerName: "",
+            type: "",
+            ibu: "",
+            details: "",
+            abv: "",
+            image: "",
+            _id:""
+        })
+
     };
 
+    //========================================================================================================================================//
     render() {
         return (
             <div>
@@ -83,7 +101,7 @@ class BeerLog extends Component {
                     {/* row for the basic inputs, this may change depending on what they want */}
                     <Row>
                         <Col size="s3">
-                            <Form name="name" placeholder="Name" onChange={this.handleInputChange} />
+                            <Form name="beerName" placeholder="Name" onChange={this.handleInputChange} />
                         </Col>
                         <Col size="s3">
                             <Form name="type" placeholder="Type" onChange={this.handleInputChange} />
@@ -106,11 +124,11 @@ class BeerLog extends Component {
                     {/* the better way is to actual store them in the database, but that probably will require paid storage, mLab free has a 5 gb cap */}
                     <Row>
                         <Col size="s6">
-                            <Form name="image1" placeholder="Image 1" />
+                            <Form name="image" placeholder="Image"  onChange={this.handleInputChange}/>
                         </Col>
-                        <Col size="s6">
+                        {/* <Col size="s6">
                             <Form name="image2" placeholder="Image 2" />
-                        </Col>
+                        </Col> */}
                     </Row>
                     <Row>
                         <Col size="s2">
@@ -120,10 +138,12 @@ class BeerLog extends Component {
                 </Container>
 
                 <div>
-                    <p> Name: {this.state.name}</p>
+                    <p> Name: {this.state.beerName}</p>
                     <p> Type: {this.state.type}</p>
                     <p> ibu: {this.state.ibu}</p>
                     <p> abv: {this.state.abv}</p>
+                    <p> Details: {this.state.details}</p>
+                    <p>Image URL: {this.state.image}</p>
 
                 </div>
 
@@ -134,12 +154,13 @@ class BeerLog extends Component {
                             {this.state.allBeers.map(beer => (
                                 <Col size="s6">
                                     <RevealCard
-                                    image={require("../images/beerCan.jpg")}
-                                    beerName={beer.beer}
+                                    image={beer.image}
+                                    beerName={beer.name}
                                     details={beer.details}
                                     abv={beer.abv}
                                     type={beer.type}
                                     ibu={beer.ibu}
+                                    key={beer._id}
                                     />
                                 </Col>
 

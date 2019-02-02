@@ -33,7 +33,7 @@ const Footer = () => (
 
                 {/* DeerLogo, may need a color change, actually it probably will */}
                 <Col size="s4">
-                    <img className="center responsive-img" src={require("../../images/Outrun_Gazelle.JPG")} alt="Outrun Gazelle" />
+                    <img className="center responsive-img" src={require("../../images/Gazelle Logo_Pink.png")} alt="Outrun Gazelle" />
                 </Col>
 
                 <Col size="s1" />

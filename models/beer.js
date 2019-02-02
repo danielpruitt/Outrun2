@@ -7,6 +7,7 @@ const beerSchema = new Schema({
     ibu: {type: String},
     abv: { type: String},
     details: {type: String},
+    image: {type: String},
     date: { type: Date, default: Date.now }
 });
 
