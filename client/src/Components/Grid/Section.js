@@ -7,7 +7,7 @@ const Section = ({ children }) => (
         <div className="section">
             {children}
 
-            <MyParticles />
+
         </div>
 
     </div>
