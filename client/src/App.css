@@ -20,6 +20,21 @@
   src: url(./fonts/summer85.ttf);
 }
 
+/* scrollbar */
+.scroll4::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.scroll4::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+.scroll4::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
 /* end new fonts */
 
 /* standard class for header fonts, neon flash is on but curosr does not change */

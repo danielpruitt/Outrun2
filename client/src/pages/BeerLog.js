@@ -18,7 +18,7 @@ class BeerLog extends Component {
         details: "",
         abv: "",
         image: "",
-        id:"",
+        key:"",
         allBeers: []
     }
 
@@ -44,7 +44,7 @@ class BeerLog extends Component {
                 details: "",
                 abv: "",
                 image: "",
-                _id:""
+                key:""
             })
         )
         .catch(err => console.log(err))
@@ -75,7 +75,8 @@ class BeerLog extends Component {
                 ibu: this.state.ibu,
                 details: this.state.details,
                 abv: this.state.abv,
-                image: this.state.image
+                image: this.state.image,
+                
             })
             .then(res => this.loadSaved())
             .catch(err => console.log(err + "error in the form submit"));
@@ -87,7 +88,7 @@ class BeerLog extends Component {
             details: "",
             abv: "",
             image: "",
-            _id:""
+            key:""
         })
 
     };
@@ -136,16 +137,12 @@ class BeerLog extends Component {
                         </Col>
                     </Row>
                 </Container>
-
-                <div>
-                    <p> Name: {this.state.beerName}</p>
-                    <p> Type: {this.state.type}</p>
-                    <p> ibu: {this.state.ibu}</p>
-                    <p> abv: {this.state.abv}</p>
-                    <p> Details: {this.state.details}</p>
-                    <p>Image URL: {this.state.image}</p>
-
-                </div>
+        
+                <Row>
+                    <Col size="s6">
+                        <img src={`${this.state.image}`} alt="Checking to see if it's the right img" className="responsive-img" /> 
+                    </Col>
+                </Row>
 
                 <div> 
                     {/* set cards here with the existing beers  */}

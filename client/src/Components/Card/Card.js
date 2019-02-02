@@ -17,7 +17,7 @@ const RevealCard = (props) => (
         </div>
 
         {/* card details */}
-        <div className="card-reveal">
+        <div className="card-reveal scroll4">
             <h3 className="card-title grey-text text-darken-4">{props.beerName}<i className="fas fa-sort-down right"></i></h3>
             <p>{props.details}</p>
             <p>Type: {props.type}</p>
