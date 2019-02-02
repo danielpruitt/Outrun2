@@ -97,8 +97,6 @@ font-style:italic;
 cursor: pointer;
 }
 
-
-
 /* webkit and mozilla animations for joint <h2> tag class from header component.
 used to make the pulse of the neon sign and turns the font color white. */
 .neon:hover {
@@ -171,4 +169,12 @@ used to make the pulse of the neon sign and turns the font color white. */
 /* section paragraphs */
 p {
   color: white
+}
+
+.card p {
+  color: black
+}
+
+footer { 
+  color:white
 }
