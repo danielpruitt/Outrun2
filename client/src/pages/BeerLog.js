@@ -3,10 +3,12 @@ import Container from "../Components/Grid/Container";
 import Col from "../Components/Grid/Col";
 import Row from "../Components/Grid/Row";
 import Form from "../Components/Form/Form";
-import Textarea from "../Components/Form/Textarea";
+// import Textarea from "../Components/Form/Textarea";
 import Button from "../Components/Button/Button";
 import API from "../utils/API";
 import RevealCard from "../Components/Card/Card";
+import DelButton from "../Components/Button/DelButton";
+import EditButton from "../Components/Button/EditButton";
 
 
 class BeerLog extends Component {
@@ -22,10 +24,8 @@ class BeerLog extends Component {
         allBeers: []
     }
 
-    componentDidMount() {
-        
+    componentDidMount() {   
         this.loadSaved();
-
     };
 
 
@@ -46,6 +46,7 @@ class BeerLog extends Component {
                 image: "",
                 key:""
             })
+        
         )
         .catch(err => console.log(err))
 
@@ -54,15 +55,25 @@ class BeerLog extends Component {
     //--------------------------------------------------//
     // HANDLERS
     // handles the input change in a give field. 
-    handleInputChange = event => {
-
+    handleInputChange = (event) => {
+        event.preventDefault();
         const { name, value } = event.target;
         this.setState({
             [name]: value
         });
         
     };
+    
+    deleteBeer = id => {
+        API.deleteBeer(id)
+        .then(res => this.loadSaved())
+        .catch(err => console.log(err));
+    };
 
+    handleEdit = id => {
+        console.log("clicked edit on id: "+ id);
+        //this will need to trigger something for the new input fields to show and then call the handleSubmit
+    }
 
     // handle submission of the form
     handleSubmit = (event) => {
@@ -93,6 +104,9 @@ class BeerLog extends Component {
 
     };
 
+
+    
+
     //========================================================================================================================================//
     render() {
         return (
@@ -116,7 +130,7 @@ class BeerLog extends Component {
                     </Row>
                     <Row>
                         <Col size="s12">
-                            <Textarea name="details" placeholder="Details" onChange={this.handleInputChange} />
+                            <Form name="details" placeholder="Details" onChange={this.handleInputChange} />
                         </Col>
                     </Row>
 
@@ -149,7 +163,8 @@ class BeerLog extends Component {
                     <Container>
                         <Row>
                             {this.state.allBeers.map(beer => (
-                                <Col size="s6">
+                                <div key={beer._id}>
+                                    <Col size="s6">
                                     <RevealCard
                                     image={beer.image}
                                     beerName={beer.name}
@@ -157,14 +172,27 @@ class BeerLog extends Component {
                                     abv={beer.abv}
                                     type={beer.type}
                                     ibu={beer.ibu}
-                                    key={beer._id}
+                                    id={beer._id}
                                     />
+                        
+                                    <Row>
+                                    <Col size="s2">
+                                        <EditButton onClick={() => this.handleEdit(beer._id)} />
+                                    </Col>
+
+                                    <Col size="s2">
+                                    {/* <button className="btn red darken-4" onClick={() => this.deleteBeer(beer._id)} id={`${beer._id}`} >Delete</button> */}
+                                        <DelButton onClick={() => this.deleteBeer(beer._id)} />
+                                    </Col>
+                                </Row>
                                 </Col>
+                                </div>
+                            
 
                             ))}
                         </Row>
                     </Container>
-                    {/* make sure there's a delete function */}
+                
                 </div>
             </div>
         )

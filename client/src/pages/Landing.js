@@ -7,8 +7,8 @@ import Parallax from "../Components/Parallax/Parallax";
 import Footer from "../Components/Footer/Footer";
 import RevealCard from "../Components/Card/Card";
 import API from "../utils/API";
-import MyParticles from "../Components/Particles/Particles";
-
+import Header from "../Components/Header/header";
+import {Link} from "react-router-dom";
 
 class Landing extends Component {
 
@@ -57,7 +57,8 @@ class Landing extends Component {
     render() {
         return (
             <div>
-
+    
+        <Header />
                 {/* Our Beers */}
                 <Section>
                     <Container>
@@ -110,6 +111,13 @@ class Landing extends Component {
                                         Nam auctor quam arcu. Vivamus non elit tortor. In diam justo, viverra non massa eu, pretium feugiat dolor. Ut sapien dolor, dignissim eu facilisis vitae, mattis euismod nisi. Etiam ut ex cursus, sodales tellus eget, finibus nisi. Ut eget enim a arcu tincidunt auctor vitae ut lorem. Praesent elit diam, feugiat sed consectetur vel, gravida quis dui. Donec ornare lacus id velit venenatis, sed hendrerit velit pulvinar. Praesent eu euismod augue, eget varius neque. Fusce dignissim lectus id ex vestibulum vulputate. Phasellus facilisis blandit consequat. Phasellus consequat magna ut tristique ultricies.
                                     </p>
                                 </div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col size="s8">
+                            </Col>
+                            <Col size="s4">
+                                <Link to={"/ourbrewers"}><h5>Meet our brewers.</h5></Link>
                             </Col>
                         </Row>
                     </Container>

@@ -24,7 +24,7 @@
 .scroll4::-webkit-scrollbar {
   width: 10px;
 }
- 
+
 .scroll4::-webkit-scrollbar-thumb {
   background: #666;
   border-radius: 20px;
@@ -37,6 +37,9 @@
 
 /* end new fonts */
 
+.outrunPink { 
+  background-color:#BC1682
+}
 /* standard class for header fonts, neon flash is on but curosr does not change */
 .lazer84 {
   color: #BC1682;

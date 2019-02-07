@@ -5,7 +5,7 @@ const RevealCard = (props) => (
     // props may have to change once it becomes a stateful component
     // the text color will need to change to match
     //depending on how the image is stored the code will need to change to reflect it. 
-    <div className="card small hoverable flow-text" key={props._id}>
+    <div className="card small hoverable flow-text" id={`${props.id}`} key={`${props.id}`}>
         {/* image will eventually hold from state */}
         <div className="card-image waves-effect waves-block waves-dark">
             <img className="activator responsive-img" src={`${props.image}`} alt={`${props.beerName}`} />
@@ -23,6 +23,7 @@ const RevealCard = (props) => (
             <p>Type: {props.type}</p>
             <p>ABV: {props.abv}%</p>
             <p>IBU: {props.ibu}</p>
+        
         </div>
 
 
