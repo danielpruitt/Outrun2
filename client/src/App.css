@@ -20,13 +20,40 @@
   src: url(./fonts/summer85.ttf);
 }
 
+/* label color */
+.input-field label {
+  color: #fff;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #fff;
+}
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #fff;
+  }
 /* scrollbar */
 .scroll4::-webkit-scrollbar {
   width: 10px;
 }
 
 .scroll4::-webkit-scrollbar-thumb {
-  background: #666;
+  background: rgb(175, 163, 163);
   border-radius: 20px;
 }
 
@@ -153,7 +180,23 @@ used to make the pulse of the neon sign and turns the font color white. */
 }
 
 /* end in major container */
-
+/* customize cards */
+.card-content { 
+  background-color: #666;
+}
+.card{
+  background-color: #666
+}
+.card .card-reveal{
+  background-color:#666;
+}
+.card-image { 
+  height:400px;
+  width:auto;;
+}
+/* .card-content { 
+  height:60%
+} */
 /* applied styling for Webkit when hovering over the text. */
 @-webkit-keyframes neon6 {
   from {

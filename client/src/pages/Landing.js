@@ -8,8 +8,10 @@ import Footer from "../Components/Footer/Footer";
 import RevealCard from "../Components/Card/Card";
 import API from "../utils/API";
 import Header from "../Components/Header/header";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
+// trying out this image card instead of a dynamic card
+// import ImageCard from "../Components/Card/ImageCard";
 class Landing extends Component {
 
     state = {
@@ -57,8 +59,8 @@ class Landing extends Component {
     render() {
         return (
             <div>
-    
-        <Header />
+
+                <Header />
                 {/* Our Beers */}
                 <Section>
                     <Container>
@@ -69,7 +71,19 @@ class Landing extends Component {
                         </Row>
                         <Row>
                             {this.state.allBeers.map(beer => (
-                                <Col size="s6">
+                                <div key={beer._id}>
+                                    <Col size="s6">
+                                        {/* <ImageCard
+                                            image={beer.image}
+                                            beerName={beer.name}
+                                            details={beer.details}
+                                            abv={beer.abv}
+                                            type={beer.type}
+                                            ibu={beer.ibu}
+                                            id={beer._id}
+                                        /> */}
+
+                                        
                                     <RevealCard
                                         image={beer.image}
                                         beerName={beer.name}
@@ -77,9 +91,11 @@ class Landing extends Component {
                                         abv={beer.abv}
                                         type={beer.type}
                                         ibu={beer.ibu}
-                                        key={beer._id}
+                                        id={beer._id}
                                     />
-                                </Col>
+
+                                    </Col>
+                                </div>
 
                             ))}
                         </Row>
@@ -104,7 +120,7 @@ class Landing extends Component {
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt aliquet magna vitae dapibus. Aenean porta ante a tellus iaculis porttitor. Sed laoreet vehicula dui quis aliquam. Nam mattis risus id malesuada egestas. Quisque imperdiet magna vitae euismod rutrum. Nunc non orci sed turpis vulputate sollicitudin. Aenean volutpat nunc vitae lectus venenatis finibus. Praesent condimentum lectus sit amet diam sagittis, in suscipit turpis sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras quis magna varius, luctus lorem vel, malesuada sem. Sed quis purus non sapien venenatis varius. Etiam nisl magna, dignissim id ex in, tincidunt sollicitudin velit. Curabitur quis ligula nulla. Quisque at magna volutpat, faucibus odio vel, auctor lectus.
                                     </p>
-                                        <p>
+                                    <p>
                                         Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vel tortor consequat, venenatis ipsum sit amet, suscipit ex. Mauris diam erat, hendrerit ac sagittis a, laoreet ut augue. Donec cursus tempor porttitor. Ut gravida massa augue, non ornare nisl efficitur vel. Sed placerat quam eu dolor dignissim placerat. Etiam id sapien vitae nibh dignissim auctor. Quisque condimentum elit at sollicitudin fermentum. Etiam bibendum, urna non eleifend rutrum, erat arcu ornare urna, nec faucibus elit leo vel dui. In eget massa at massa varius tincidunt vitae vel tortor. Ut at lacus nisl. Donec quis porta ex.
                                     </p>
                                     <p>
@@ -139,7 +155,7 @@ class Landing extends Component {
                             <Col size="s12">
                                 <div>
                                     <p>
-                                    In volutpat, augue quis accumsan fringilla, elit metus fermentum justo, nec commodo metus risus sed nunc. Proin id congue nisi. Nulla tempus ipsum at pharetra dignissim. Proin dapibus, dolor ac venenatis pulvinar, est odio finibus mi, at tincidunt metus justo a felis. Praesent vulputate turpis id orci vehicula, id fringilla massa maximus. Mauris eleifend elit nulla, vel elementum arcu tincidunt non. Etiam sed feugiat odio. Quisque at facilisis mauris. Sed id velit efficitur, cursus eros iaculis, dapibus dui. Phasellus malesuada tellus at maximus pretium
+                                        In volutpat, augue quis accumsan fringilla, elit metus fermentum justo, nec commodo metus risus sed nunc. Proin id congue nisi. Nulla tempus ipsum at pharetra dignissim. Proin dapibus, dolor ac venenatis pulvinar, est odio finibus mi, at tincidunt metus justo a felis. Praesent vulputate turpis id orci vehicula, id fringilla massa maximus. Mauris eleifend elit nulla, vel elementum arcu tincidunt non. Etiam sed feugiat odio. Quisque at facilisis mauris. Sed id velit efficitur, cursus eros iaculis, dapibus dui. Phasellus malesuada tellus at maximus pretium
                             </p>
                                 </div>
                             </Col>
@@ -163,9 +179,9 @@ class Landing extends Component {
                             <Col size="s12">
                                 <div>
                                     <p>
-                                    In volutpat, augue quis accumsan fringilla, elit metus fermentum justo, nec commodo metus risus sed nunc. Proin id congue nisi. Nulla tempus ipsum at pharetra dignissim. Proin dapibus, dolor ac venenatis pulvinar, est odio finibus mi, at tincidunt metus justo a felis. Praesent vulputate turpis id orci vehicula, id fringilla massa maximus. Mauris eleifend elit nulla, vel elementum arcu tincidunt non. Etiam sed feugiat odio. Quisque at facilisis mauris. Sed id velit efficitur, cursus eros iaculis, dapibus dui. Phasellus malesuada tellus at maximus pretium.
-
-                                    Quisque condimentum nisi eu faucibus ornare. Curabitur elit sem, fringilla ac lacus in, dapibus vehicula lectus. Morbi vulputate maximus dolor eget semper. Etiam semper grfavida sagittis. Ut eget elit sed metus dictum dapibus. Quisque scelerisque nisl tristique, fringilla lacus fringilla, posuere sapien. Maecenas eget purus in dui porta efficitur. Nulla nec urna sapien.
+                                        In volutpat, augue quis accumsan fringilla, elit metus fermentum justo, nec commodo metus risus sed nunc. Proin id congue nisi. Nulla tempus ipsum at pharetra dignissim. Proin dapibus, dolor ac venenatis pulvinar, est odio finibus mi, at tincidunt metus justo a felis. Praesent vulputate turpis id orci vehicula, id fringilla massa maximus. Mauris eleifend elit nulla, vel elementum arcu tincidunt non. Etiam sed feugiat odio. Quisque at facilisis mauris. Sed id velit efficitur, cursus eros iaculis, dapibus dui. Phasellus malesuada tellus at maximus pretium.
+    
+                                        Quisque condimentum nisi eu faucibus ornare. Curabitur elit sem, fringilla ac lacus in, dapibus vehicula lectus. Morbi vulputate maximus dolor eget semper. Etiam semper grfavida sagittis. Ut eget elit sed metus dictum dapibus. Quisque scelerisque nisl tristique, fringilla lacus fringilla, posuere sapien. Maecenas eget purus in dui porta efficitur. Nulla nec urna sapien.
                                     </p>
                                 </div>
                             </Col>
@@ -178,7 +194,7 @@ class Landing extends Component {
                 />
 
                 {/* footer, nothing below this */}
-                
+
                 <Footer />
 
             </div>

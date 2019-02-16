@@ -46,9 +46,9 @@ const Footer = () => (
                     <Col size="s3">
                         <br />
                         <div className="left-align white-text">
-                            <h5>188 Our Road</h5>
-                            <h5>Stone Mountain, Ga 3000something</h5>
-                            <h5>770-867-5309</h5>
+                            <h5>5368 East Mountain Street</h5>
+                            <h5>Stone Mountain, Ga 30083</h5>
+                            
                         </div>
 
                     </Col>

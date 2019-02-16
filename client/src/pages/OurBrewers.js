@@ -3,10 +3,13 @@ import Col from "../Components/Grid/Col";
 import Container from "../Components/Grid/Container";
 import Row from "../Components/Grid/Row";
 import {Link} from "react-router-dom";
+import Section from "../Components/Grid/Section"
+import Parallax from "../Components/Parallax/Parallax"
 
 const OurBrewers = () => (
     <div>
-        <Container>
+        <Section>
+            <Container>
             <Row>
                 <Col size="s12">
                     Ryan Silva
@@ -14,6 +17,11 @@ const OurBrewers = () => (
                 </Col>
             </Row>
         </Container>
+        </Section>
+        <Parallax 
+        image={require("../images/OutRunSunset.jpg")}
+        />
+        
     </div>
 );
 
