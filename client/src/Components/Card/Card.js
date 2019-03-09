@@ -8,7 +8,7 @@ const RevealCard = (props) => (
     <div className="card small hoverable flow-text" id={`${props.id}`} key={`${props.id}`}>
         {/* image will eventually hold from state */}
         <div className="card-image waves-effect waves-block waves-dark">
-            <img className="activator responsive-img" src={`${props.image}`} alt={`${props.beerName}`} />
+            <img className="activator" src={`${props.image}`} alt={`${props.beerName}`} />
         </div>
 
             {/* Title of Card */}
@@ -17,8 +17,8 @@ const RevealCard = (props) => (
         </div>
 
         {/* card details */}
-        <div className="card-reveal scroll4">
-            <h3 className="card-title grey-text text-darken-4">{props.beerName}<i className="fas fa-sort-down right"></i></h3>
+        <div className="card-reveal flow-text scroll4">
+            <h4 className=" grey-text text-darken-4 ">{props.beerName}<i className="fas fa-sort-down right"></i></h4>
             <p>{props.details}</p>
             <p>Type: {props.type}</p>
             <p>ABV: {props.abv}%</p>

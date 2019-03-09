@@ -125,7 +125,7 @@ class BeerLog extends Component {
                             <Form name="ibu" placeholder="IBU" onChange={this.handleInputChange} />
                         </Col>
                         <Col size="s3">
-                            <Form name="abv" placeholder="ABV" onChange={this.handleInputChange} />
+                            <Form name="abv" placeholder="ABV (no %)" onChange={this.handleInputChange} />
                         </Col>
                     </Row>
                     <Row>
@@ -181,17 +181,16 @@ class BeerLog extends Component {
                                     </Col>
 
                                     <Col size="s2">
-                                    {/* <button className="btn red darken-4" onClick={() => this.deleteBeer(beer._id)} id={`${beer._id}`} >Delete</button> */}
                                         <DelButton onClick={() => this.deleteBeer(beer._id)} />
                                     </Col>
                                 </Row>
                                 </Col>
                                 </div>
-                            
-
                             ))}
                         </Row>
                     </Container>
+
+                
                 
                 </div>
             </div>
