@@ -47,6 +47,8 @@
   .input-field .prefix.active {
     color: #fff;
   }
+
+  
 /* scrollbar */
 .scroll4::-webkit-scrollbar {
   width: 10px;
@@ -87,6 +89,11 @@
   box-shadow: 0px 1px #6c0e4b
 }
 
+.brandLogoFix { 
+  width:15%; 
+  height:15%;
+  padding-top:3px;
+}
 
 /* background image is being brought in through the parallax component */
 /* referring to the header component in React. cascading from <Header> to <h2> */
@@ -95,6 +102,15 @@
   background-image: url('./images/headerlogo.png');
   background-size: cover;
   height: 600px;
+}
+
+.respImg { 
+  display:flex;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 /* referring to the container used in the header component with ID HeaderContainer */
 
@@ -110,6 +126,7 @@
   z-index: -1;
 }
 /* testing Particle js */
+
 body{
   background-color: #2b2b2b;
 }
@@ -120,10 +137,6 @@ body{
     z-index: -1;
 } 
 
-/* behind class is testing the particles as part of the background canvas */
-
-
-/* ============================================================ */
 
 /* Joint class tag for both <h2> tags in the Header Component */
 .neon {
@@ -133,7 +146,6 @@ text-decoration: none;
 -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
 transition: all 0.5s;
-
 font-family:'Lazer84';
 letter-spacing: 8px;
 /* font-size: 200em; */
@@ -165,7 +177,7 @@ used to make the pulse of the neon sign and turns the font color white. */
   font-size: 46px;
   position: absolute;
   left:12%;
-  top: 30%;
+  top: 40%;
 
 }
 
@@ -176,10 +188,11 @@ used to make the pulse of the neon sign and turns the font color white. */
   text-align: right;
   position: absolute;
   right: 5%;
-  top: 30%;
+  top: 40%;
 }
 
 /* end in major container */
+
 /* customize cards */
 .card-content { 
   background-color: #666;
@@ -190,13 +203,8 @@ used to make the pulse of the neon sign and turns the font color white. */
 .card .card-reveal{
   background-color:#666;
 }
-.card-image { 
-  height:400px;
-  width:auto;;
-}
-/* .card-content { 
-  height:60%
-} */
+
+
 /* applied styling for Webkit when hovering over the text. */
 @-webkit-keyframes neon6 {
   from {

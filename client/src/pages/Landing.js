@@ -5,9 +5,11 @@ import Row from "../Components/Grid/Row";
 import Section from "../Components/Grid/Section";
 import Parallax from "../Components/Parallax/Parallax";
 import Footer from "../Components/Footer/Footer";
-import RevealCard from "../Components/Card/Card";
+import Navbar from "../Components/Navbar/Navbar";
+// import RevealCard from "../Components/Card/Card";
 import API from "../utils/API";
 import Header from "../Components/Header/header";
+import CustomCard from  "../Components/Card/CustomCard";
 import { Link } from "react-router-dom";
 
 // trying out this image card instead of a dynamic card
@@ -62,6 +64,7 @@ class Landing extends Component {
 
                 <Header />
                 {/* Our Beers */}
+                <Navbar/>
                 <Section>
                     <Container>
                         <Row>
@@ -72,19 +75,9 @@ class Landing extends Component {
                         <Row>
                             {this.state.allBeers.map(beer => (
                                 <div key={beer._id}>
-                                    <Col size="s6">
-                                        {/* <ImageCard
-                                            image={beer.image}
-                                            beerName={beer.name}
-                                            details={beer.details}
-                                            abv={beer.abv}
-                                            type={beer.type}
-                                            ibu={beer.ibu}
-                                            id={beer._id}
-                                        /> */}
-
-                                        
-                                    <RevealCard
+                                    <Col size="l4 m6 s12">
+                                    
+                                    <CustomCard
                                         image={beer.image}
                                         beerName={beer.name}
                                         details={beer.details}
@@ -103,7 +96,7 @@ class Landing extends Component {
                 </Section>
 
                 <Parallax
-                    image={require("../images/OutRunSunset.jpg")}
+                    image={require("../images/OBC_NeonSign_Logotype.jpg")}
                 />
 
                 {/* Our Story */}
@@ -117,15 +110,8 @@ class Landing extends Component {
                         <Row>
                             <Col size="s12">
                                 <div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt aliquet magna vitae dapibus. Aenean porta ante a tellus iaculis porttitor. Sed laoreet vehicula dui quis aliquam. Nam mattis risus id malesuada egestas. Quisque imperdiet magna vitae euismod rutrum. Nunc non orci sed turpis vulputate sollicitudin. Aenean volutpat nunc vitae lectus venenatis finibus. Praesent condimentum lectus sit amet diam sagittis, in suscipit turpis sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras quis magna varius, luctus lorem vel, malesuada sem. Sed quis purus non sapien venenatis varius. Etiam nisl magna, dignissim id ex in, tincidunt sollicitudin velit. Curabitur quis ligula nulla. Quisque at magna volutpat, faucibus odio vel, auctor lectus.
-                                    </p>
-                                    <p>
-                                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vel tortor consequat, venenatis ipsum sit amet, suscipit ex. Mauris diam erat, hendrerit ac sagittis a, laoreet ut augue. Donec cursus tempor porttitor. Ut gravida massa augue, non ornare nisl efficitur vel. Sed placerat quam eu dolor dignissim placerat. Etiam id sapien vitae nibh dignissim auctor. Quisque condimentum elit at sollicitudin fermentum. Etiam bibendum, urna non eleifend rutrum, erat arcu ornare urna, nec faucibus elit leo vel dui. In eget massa at massa varius tincidunt vitae vel tortor. Ut at lacus nisl. Donec quis porta ex.
-                                    </p>
-                                    <p>
-                                        Nam auctor quam arcu. Vivamus non elit tortor. In diam justo, viverra non massa eu, pretium feugiat dolor. Ut sapien dolor, dignissim eu facilisis vitae, mattis euismod nisi. Etiam ut ex cursus, sodales tellus eget, finibus nisi. Ut eget enim a arcu tincidunt auctor vitae ut lorem. Praesent elit diam, feugiat sed consectetur vel, gravida quis dui. Donec ornare lacus id velit venenatis, sed hendrerit velit pulvinar. Praesent eu euismod augue, eget varius neque. Fusce dignissim lectus id ex vestibulum vulputate. Phasellus facilisis blandit consequat. Phasellus consequat magna ut tristique ultricies.
-                                    </p>
+                                <p>We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites. Remember to #followtheneon</p>
+                        
                                 </div>
                             </Col>
                         </Row>
@@ -140,7 +126,7 @@ class Landing extends Component {
                 </Section>
 
                 <Parallax
-                    image={require("../images/OutRunSunset.jpg")}
+                    image={require("../images/brewRoom.jpg")}
                 />
 
                 {/* Location: need address and maybe add in google maps */}
@@ -164,7 +150,7 @@ class Landing extends Component {
                 </Section>
 
                 <Parallax
-                    image={require("../images/OutRunSunset.jpg")}
+                    image={require("../images/backroom.jpeg")}
                 />
 
                 {/* Contact */}
@@ -190,7 +176,7 @@ class Landing extends Component {
                 </Section>
 
                 <Parallax
-                    image={require("../images/OutRunSunset.jpg")}
+                    image={require("../images/brewRoom.jpg")}
                 />
 
                 {/* footer, nothing below this */}
