@@ -48,23 +48,6 @@
     color: #fff;
   }
 
-  
-/* scrollbar */
-.scroll4::-webkit-scrollbar {
-  width: 10px;
-}
-
-.scroll4::-webkit-scrollbar-thumb {
-  background: rgb(175, 163, 163);
-  border-radius: 20px;
-}
-
-.scroll4::-webkit-scrollbar-track {
-  background: #ddd;
-  border-radius: 20px;
-}
-
-/* end new fonts */
 
 .outrunPink { 
   background-color:#BC1682
@@ -89,15 +72,14 @@
   box-shadow: 0px 1px #6c0e4b
 }
 
+/* end new fonts */
+
+
 .brandLogoFix { 
   width:15%; 
   height:15%;
   padding-top:3px;
 }
-
-/* background image is being brought in through the parallax component */
-/* referring to the header component in React. cascading from <Header> to <h2> */
-
 .header {
   background-image: url('./images/headerlogo.png');
   background-size: cover;
@@ -105,12 +87,14 @@
 }
 
 .respImg { 
-  display:flex;
+  width: 100%;
+  /* height:100vh */
+  /* display:flex;
   width: auto;
   height: auto;
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: cover; */
 }
 /* referring to the container used in the header component with ID HeaderContainer */
 
@@ -176,8 +160,8 @@ used to make the pulse of the neon sign and turns the font color white. */
 .beersContent {
   font-size: 46px;
   position: absolute;
-  left:12%;
-  top: 40%;
+  left:10%;
+  top: 70%;
 
 }
 
@@ -187,8 +171,8 @@ used to make the pulse of the neon sign and turns the font color white. */
   font-size: 46px;
   text-align: right;
   position: absolute;
-  right: 5%;
-  top: 40%;
+  right: 2%;
+  top: 70%;
 }
 
 /* end in major container */
@@ -204,6 +188,13 @@ used to make the pulse of the neon sign and turns the font color white. */
   background-color:#666;
 }
 
+.pt { 
+  padding-top:8px
+}
+
+small { 
+  font-family: "lazer84"
+}
 
 /* applied styling for Webkit when hovering over the text. */
 @-webkit-keyframes neon6 {
