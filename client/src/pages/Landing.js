@@ -65,10 +65,10 @@ class Landing extends Component {
 
                 <Header />
                 {/* Our Beers */}
-                
+                <Navbar />
+            
 
                 <Section>
-                    <Navbar />
                     <Container>
                         <Row>
                             <Col size="s12">

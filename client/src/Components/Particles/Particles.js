@@ -7,7 +7,7 @@ const MyParticles = () => (
             params={{
                 "particles": {
                     "number": {
-                        "value": 72,
+                        "value": 50,
                         "density": {
                             "enable": true,
                             "value_area": 600
@@ -37,7 +37,7 @@ const MyParticles = () => (
                         }
                     },
                     "size": {
-                        "value": 6,
+                        "value": 4,
                         "random": true,
                         "anim": {
                             "enable": false,

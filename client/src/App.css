@@ -48,6 +48,9 @@
     color: #fff;
   }
 
+.outrunpurple { 
+  background-color: #d90606
+}
 
 .outrunPink { 
   background-color:#BC1682
@@ -79,6 +82,12 @@
   width:15%; 
   height:15%;
   padding-top:3px;
+}
+
+.brandLogoFixOnSmall { 
+  width:25%; 
+  /* height:45%; */
+  padding-top:5px;
 }
 .header {
   background-image: url('./images/headerlogo.png');
