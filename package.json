@@ -1,5 +1,5 @@
 {
-  "name": "mern",
+  "name": "outrun",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -24,6 +24,7 @@
     "express": "^4.16.4",
     "if-env": "^1.0.4",
     "mongoose": "^5.3.11",
+    "nodemailer": "^5.1.1",
     "react-dropdown": "^1.6.2",
     "react-router-dom": "^4.3.1"
   },

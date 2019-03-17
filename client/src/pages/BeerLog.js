@@ -78,7 +78,7 @@ class BeerLog extends Component {
     // handle submission of the form
     handleSubmit = (event) => {
         event.preventDefault();
-        console.table(this.state);
+        // console.table(this.state);
         if(this.state.beerName && this.state.type && this.state.abv) {
             API.saveBeer({
                 name: this.state.beerName,

@@ -11,6 +11,7 @@ import API from "../utils/API";
 import Header from "../Components/Header/header";
 import CustomCard from "../Components/Card/CustomCard";
 import { Link } from "react-router-dom";
+import ContactForm from "../Components/ContactForm/ContactForm";
 
 // trying out this image card instead of a dynamic card
 // import ImageCard from "../Components/Card/ImageCard";
@@ -64,10 +65,10 @@ class Landing extends Component {
 
                 <Header />
                 {/* Our Beers */}
-                
+                <Navbar />
+            
 
                 <Section>
-                    <Navbar />
                     <Container>
                         <Row>
                             <Col size="s12">
@@ -127,29 +128,23 @@ class Landing extends Component {
                     </Container>
                 </Section>
 
-                {/* <Parallax
+                <Parallax
                     image={require("../images/brewRoom.jpg")}
-                /> */}
+                />
 
                 {/* Location: need address and maybe add in google maps */}
-                {/* <Section>
+                <Section>
                     <Container>
                         <Row>
                             <Col size="s12">
-                                <h3 className="lazer84 border-bottom">Location</h3>
+                                <h3 className="lazer84 border-bottom" id="contact">Contact</h3>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col size="s12">
-                                <div>
-                                    <p>
-                                        In volutpat, augue quis accumsan fringilla, elit metus fermentum justo, nec commodo metus risus sed nunc. Proin id congue nisi. Nulla tempus ipsum at pharetra dignissim. Proin dapibus, dolor ac venenatis pulvinar, est odio finibus mi, at tincidunt metus justo a felis. Praesent vulputate turpis id orci vehicula, id fringilla massa maximus. Mauris eleifend elit nulla, vel elementum arcu tincidunt non. Etiam sed feugiat odio. Quisque at facilisis mauris. Sed id velit efficitur, cursus eros iaculis, dapibus dui. Phasellus malesuada tellus at maximus pretium
-                            </p>
-                                </div>
-                            </Col>
-                        </Row>
+                    
                     </Container>
-                </Section> */}
+                    <ContactForm />
+
+                </Section>
 
                 {/* <Parallax
                     image={require("../images/backroom.jpeg")}
