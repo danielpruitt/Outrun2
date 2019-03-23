@@ -1,0 +1,18 @@
+.stickyNav { 
+    position:sticky;
+    top: 0px;
+    z-index:1;
+}
+
+#SideNav a, i , li { 
+    color: white;
+}
+
+.sideNavImg { 
+    width: 30vw;
+    height:auto;
+}
+#SideNav p { 
+    font-size: smaller;
+    color:white
+}

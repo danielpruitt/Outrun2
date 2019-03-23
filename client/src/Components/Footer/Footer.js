@@ -5,7 +5,7 @@ import MyParticles from "../Particles/Particles";
 
 
 const Footer = () => (
-    <div>
+    <div className="hide-on-med-and-down">
         <MyParticles />
 
         <div className="section gradient">
@@ -20,7 +20,7 @@ const Footer = () => (
                                 <i className="fab fa-instagram"></i>
                             </h1>
 
-                            <h5>@OutrunBrewingCo</h5>
+                            <h5><a href = "https://www.instagram.com/outrunbrewingco/" >@OutrunBrewingCo</a></h5>
 
                             <h1>
                                 <i className="fab fa-facebook-square"></i>

@@ -1,8 +1,9 @@
 import React from "react";
-
+import Sidenav from "./Sidenav";
+import "./Nav.css"
 const Navbar = () => (
 
-    <div>
+    <div className='stickyNav'>
         <nav>
             <div className="navbar " >
                 <nav className="">
@@ -32,15 +33,7 @@ const Navbar = () => (
             </div>
         </nav>
 
-        <ul className="sidenav outrunPink" id="mobileNav">
-            <li>
-                <a href="#ourbeers">Our Beers</a>
-            </li>
-            <li><a href="#ourstory">Our Story</a></li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+        <Sidenav/>
     </div>
 );
 
