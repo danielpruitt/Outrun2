@@ -4,7 +4,7 @@ import Container from "../Components/Grid/Container";
 import Row from "../Components/Grid/Row";
 import Section from "../Components/Grid/Section";
 import Parallax from "../Components/Parallax/Parallax";
-import Footer from "../Components/Footer/Footer";
+import Footer from "../Components/Footer/Footer1";
 import Navbar from "../Components/Navbar/Navbar";
 // import RevealCard from "../Components/Card/Card";
 import API from "../utils/API";
@@ -63,16 +63,20 @@ class Landing extends Component {
         return (
             <div>
 
-                <Header />
+                {/* <Header /> */}
                 {/* Our Beers */}
                 <Navbar />
-            
+        
+                <div id='ourbeers'></div>
+                <br />
+
 
                 <Section>
-                    <Container>
+                    
+                    {/* <Container>
                         <Row>
                             <Col size="s12">
-                                <h3 className="lazer84 border-bottom scrollspy" id="ourbeers">Beers</h3>
+                                <h3 className="lazer84 border-bottom scrollspy ourbeers" id="">Beers</h3>
                             </Col>
                         </Row>
                         <Row>
@@ -95,6 +99,26 @@ class Landing extends Component {
 
                             ))}
                         </Row>
+                    </Container> */}
+
+                    <Container>
+                        <Row> 
+                            <Col size='s12'>
+                                <h3 className='lazer84 border-bottom'>Beers</h3>
+                            </Col>
+                        </Row>
+                        <Row> 
+                            <Col size='s5'>
+                                <img className='responsive-img' src={require("../images/FollowTheNeon_Sign_Outrun.jpg")} alt='Follow The Neon' />
+                            </Col>
+                            <Col size='s7'>
+                                <p className='abyssopelagic'>We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
+                                    </p>
+                                    <a className=' btn outrunPink'
+                                    onClick={() => window.open('https://www.patreon.com/outrunbrewingco','_blank')}
+                                    >Become a Patron</a>
+                            </Col>
+                        </Row>
                     </Container>
                 </Section>
 
@@ -103,17 +127,24 @@ class Landing extends Component {
                 />
 
                 {/* Our Story */}
+                <div id='ourstory'> </div>
+                <br/>
                 <Section>
                     <Container>
                         <Row>
                             <Col size="s12">
-                                <h3 className="lazer84 border-bottom scrollspy" id="ourstory">Our Story</h3>
+                                <h3 className="lazer84 border-bottom scrollspy ourstory" id="">Our Story</h3>
                             </Col>
                         </Row>
                         <Row>
-                            <Col size="s12">
+                            <Col size="s4">
+                                <img className='responsive-img' src={require('../images/Gazelle Logo_Pink.png')} alt='Our Story pic' />
+                            </Col>
+                            <Col size="s8">
                                 <div>
-                                    <p>We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites. Remember to #followtheneon</p>
+                                    <p className="abyssopelagic ">We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
+                                    </p>
+                                    <h5 className='abyssopelagic '>Remember to #followtheneon</h5>
 
                                 </div>
                             </Col>
@@ -122,7 +153,7 @@ class Landing extends Component {
                             <Col size="s8">
                             </Col>
                             <Col size="s4">
-                                <Link to={"/ourbrewers"}><h5>Meet our brewers.</h5></Link>
+                                {/* <Link className='abyssopelagic' to={"/ourbrewers"}><h5>Meet our brewers.</h5></Link> */}
                             </Col>
                         </Row>
                     </Container>
@@ -132,45 +163,21 @@ class Landing extends Component {
                     image={require("../images/brewRoom.jpg")}
                 />
 
-                {/* Location: need address and maybe add in google maps */}
+                {/* Contact */}
+                <div id='contact'></div>
+                <br/>
+
                 <Section>
                     <Container>
                         <Row>
                             <Col size="s12">
-                                <h3 className="lazer84 border-bottom" id="contact">Contact</h3>
+                                <h3 className="lazer84 border-bottom contact" id="">Contact</h3>
                             </Col>
                         </Row>
-                    
                     </Container>
                     <ContactForm />
-
                 </Section>
 
-                {/* <Parallax
-                    image={require("../images/backroom.jpeg")}
-                /> */}
-
-                {/* Contact */}
-                {/* <Section>
-                    <Container>
-                        <Row>
-                            <Col size="s12">
-                                <h3 className="lazer84 border-bottom">Contact</h3>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col size="s12">
-                                <div>
-                                    <p>
-                                        In volutpat, augue quis accumsan fringilla, elit metus fermentum justo, nec commodo metus risus sed nunc. Proin id congue nisi. Nulla tempus ipsum at pharetra dignissim. Proin dapibus, dolor ac venenatis pulvinar, est odio finibus mi, at tincidunt metus justo a felis. Praesent vulputate turpis id orci vehicula, id fringilla massa maximus. Mauris eleifend elit nulla, vel elementum arcu tincidunt non. Etiam sed feugiat odio. Quisque at facilisis mauris. Sed id velit efficitur, cursus eros iaculis, dapibus dui. Phasellus malesuada tellus at maximus pretium.
-
-                                        Quisque condimentum nisi eu faucibus ornare. Curabitur elit sem, fringilla ac lacus in, dapibus vehicula lectus. Morbi vulputate maximus dolor eget semper. Etiam semper grfavida sagittis. Ut eget elit sed metus dictum dapibus. Quisque scelerisque nisl tristique, fringilla lacus fringilla, posuere sapien. Maecenas eget purus in dui porta efficitur. Nulla nec urna sapien.
-                                    </p>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Section> */}
 
                 <Parallax
                     image={require("../images/brewRoom.jpg")}
