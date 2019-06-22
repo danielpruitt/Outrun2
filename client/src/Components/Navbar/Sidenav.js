@@ -6,7 +6,7 @@ const Sidenav = () => (
 
         <ul className="sidenav black" id="mobileNav">
             <li>
-                <a href="#ourbeers">Our Beers</a>
+                <a className="white-text text-darken-4" href="#ourbeers">Our Beers</a>
             </li>
             <li><a href="#ourstory">Our Story</a></li>
             <li>

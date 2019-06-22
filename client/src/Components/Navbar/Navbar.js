@@ -1,5 +1,4 @@
 import React from "react";
-import Sidenav from "./Sidenav";
 import "./Nav.css"
 const Navbar = () => (
 
@@ -12,7 +11,7 @@ const Navbar = () => (
                         {/* <div className="nav-wrapper purple darken-4"> */}
                         <a href="/" className="brand-logo center hide-on-large-only "><img className="brandLogoFixOnSmall" alt="OutrunNavbarLogo" src={require("../../images/Outrun Logo_Black.png")} /></a>
 
-                        <a href="/" className="brand-logo center hide-on-med-and-down "><img className="brandLogoFix pt" alt="OutrunNavbarLogo" src={require("../../images/Outrun Logo_Black.png")} /></a>
+                        <a href="/" className="brand-logo center hide-on-med-and-down "><img className="brandLogoFix " alt="OutrunNavbarLogo" src={require("../../images/Outrun Logo_Black.png")} /></a>
                         <div data-target="mobileNav" className="sidenav-trigger hide-on-large-only"><i className="fas fa-beer"></i></div>
                         <ul className=" white light-blue-text text-darken-4 custFont hide-on-med-and-down">
                             <li className="">
@@ -33,7 +32,35 @@ const Navbar = () => (
             </div>
         </nav>
 
-        <Sidenav/>
+        <div id="SideNav">
+
+            <ul className="sidenav black" id="mobileNav">
+                <li>
+                    <a className="white-text text-darken-4" href="#ourbeers">Our Beers</a>
+                </li>
+                <li><a href="#ourstory">Our Story</a></li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <a>
+                    <img src={require("../../images/Gazelle Logo_Pink.png")} className="sideNavImg" alt="Outrun GazelleImg" />
+
+                </a>
+                <li>
+                    <a href="https://www.instagram.com/outrunbrewingco/"> @OutrunBrewingCo </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/OutrunBrewingCo"> facebook.com/OutrunBrewingCo</a>
+                </li>
+                <li>
+                    <a>5368 East Mountain Street</a>
+                    <a>Stone Mountain, Ga 30083</a>
+                    {/* @OutrunBrewingCo <i className="fab fa-twitter-square"></i> */}
+                </li>
+
+            </ul>
+
+        </div>
     </div>
 );
 

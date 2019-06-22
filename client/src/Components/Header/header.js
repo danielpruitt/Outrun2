@@ -10,7 +10,7 @@ const Header = () => (
     <header className="hide-on-med-and-down">
             <img src={require("../../images/neonSign.jpg")} className="respImg" alt="HeaderLogo"/>
 
-        <HeaderContainer>
+        {/* <HeaderContainer> */}
             <Row>
                 <Col size='s3'>
                     <a className='beersContent neon' href="#ourbeers">Beers</a>
@@ -20,7 +20,7 @@ const Header = () => (
                 </Col>
             </Row>
 
-        </HeaderContainer>
+        {/* </HeaderContainer> */}
 
 
 
