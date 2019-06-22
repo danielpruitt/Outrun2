@@ -3,9 +3,9 @@ import "./Nav.css"
 const Navbar = () => (
 
     <div className='stickyNav'>
-        <nav>
-            <div className="navbar " >
-                <nav className="">
+        
+            <div className="navbar" >
+                <nav>
                     <div className="nav-wrapper outrunPink">
 
                         {/* <div className="nav-wrapper purple darken-4"> */}
@@ -30,7 +30,7 @@ const Navbar = () => (
                     </div>
                 </nav>
             </div>
-        </nav>
+        
 
         <div id="SideNav">
 

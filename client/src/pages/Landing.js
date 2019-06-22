@@ -112,8 +112,8 @@ class Landing extends Component {
                                 <img className='responsive-img' src={require("../images/FollowTheNeon_Sign_Outrun.jpg")} alt='Follow The Neon' />
                             </Col>
                             <Col size='s7'>
-                                <p className='abyssopelagic'>We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
-                                    </p>
+                                <h5 className='abyssopelagic'>We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
+                                    </h5>
                                     <a className=' btn outrunPink'
                                     onClick={() => window.open('https://www.patreon.com/outrunbrewingco','_blank')}
                                     >Become a Patron</a>
@@ -142,9 +142,9 @@ class Landing extends Component {
                             </Col>
                             <Col size="s8">
                                 <div>
-                                    <p className="abyssopelagic ">We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
-                                    </p>
-                                    <h5 className='abyssopelagic '>Remember to #followtheneon</h5>
+                                    <h5 className="abyssopelagic ">We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
+                                    </h5>
+                                    <h4 className='abyssopelagic '>Remember to #followtheneon</h4>
 
                                 </div>
                             </Col>
