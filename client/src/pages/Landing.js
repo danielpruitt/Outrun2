@@ -12,6 +12,7 @@ import Header from "../Components/Header/header";
 import CustomCard from "../Components/Card/CustomCard";
 import { Link } from "react-router-dom";
 import ContactForm from "../Components/ContactForm/ContactForm";
+import MobileNav from "../Components/Navbar/Sidenav.1";
 
 // trying out this image card instead of a dynamic card
 // import ImageCard from "../Components/Card/ImageCard";
@@ -104,7 +105,7 @@ class Landing extends Component {
                     <Container>
                         <Row> 
                             <Col size='s12'>
-                                <h3 className='lazer84 border-bottom'>Beers</h3>
+                                <h3 className='lazer84 border-bottom scrollspy'>Beers</h3>
                             </Col>
                         </Row>
                         <Row> 
@@ -171,7 +172,7 @@ class Landing extends Component {
                     <Container>
                         <Row>
                             <Col size="s12">
-                                <h3 className="lazer84 border-bottom contact" id="">Contact</h3>
+                                <h3 className="lazer84 border-bottom  scrollspy contact" id="">Contact</h3>
                             </Col>
                         </Row>
                     </Container>
