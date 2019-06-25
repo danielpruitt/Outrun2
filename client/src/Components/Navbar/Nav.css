@@ -9,6 +9,11 @@
     top: 1vh;
     z-index:1;
 }
+.navbar-ul a  {
+    font-size: 10px;
+    font-family: "lazer84"
+
+}
 
 #SideNav a, i , li { 
     color: white;

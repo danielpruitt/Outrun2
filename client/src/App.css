@@ -98,8 +98,9 @@
 
 .brandLogoFixOnSmall { 
   width:20%; 
-  margin-right:3vw;
-  margin-top:1.3vh
+  /* margin-right:3vw; */
+  margin-left: 7vw;
+  margin-top:1.3vh;
   /* height:45%; */
 }
 .header {
@@ -270,6 +271,6 @@ button, i, a :hover{
 
 @media only screen and (max-width: 600px) {
   .nav-wrapper { 
-    width:102%
+    /* width:102% */
   }
 }

@@ -36,18 +36,18 @@ const Navbar = () => (
         <div id='mobileNav' className='stickyNavMini navbar hide-on-large-only'>
             <nav>
                 <div className='nav-wrapper outrunPink'>
-                    <ul>
+                    <ul className='navbar-ul'>
                         <li>
-                            <a className="white-text text-darken-4 flow-text" href="#ourbeers"><small>Our Beers</small></a>
+                            <a className="white-text text-darken-4 flow-text" href="#ourbeers">Our Beers</a>
                         </li>
                         <li>
-                            <a className="white-text text-darken-4 flow-text" href="#ourstory"><small>Our Story</small></a>
+                            <a className="white-text text-darken-4 flow-text" href="#ourstory">Our Story</a>
                         </li>
                         <li>
-                            <a className="white-text  text-darken-4 right flow-text" href="#contact"><small>Contact</small></a>
+                            <a className="white-text  text-darken-4 right flow-text" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <img className=" right brandLogoFixOnSmall" alt="OutrunNavbarLogo" src={require("../../images/Outrun Logo_Black.png")} />
+                    <img className="  brandLogoFixOnSmall" alt="OutrunNavbarLogo" src={require("../../images/Outrun Logo_Black.png")} />
                 
                 </div>
             </nav>
