@@ -57,31 +57,3 @@ const Navbar = () => (
 );
 
 export default Navbar;
-
-//      
-{/* <ul className="sidenav black hide-on-large-only " id="slide-out">
-<li>
-    <a className="white-text text-darken-4" href="#ourbeers">Our Beers</a>
-</li>
-<li>
-    <a className="white-text text-darken-4" href="#ourstory" onClick={() => (console.log('click'))}
->Our Story</a>
-</li>
-<li>
-    <a className="white-text text-darken-4" href="#contact">Contact</a>
-</li>
-<a>
-    <img src={require("../../images/Gazelle Logo_Pink.png")} className="sideNavImg" alt="Outrun GazelleImg" />
-</a>
-<li>
-    <a  className="white-text text-darken-4" href="https://www.instagram.com/outrunbrewingco/"> @OutrunBrewingCo </a>
-</li>
-<li>
-    <a  className="white-text text-darken-4" href="https://www.facebook.com/OutrunBrewingCo"> facebook.com/OutrunBrewingCo</a>
-</li>
-<li  className="white-text text-darken-4">
-    <a>5368 East Mountain Street</a>
-    <a>Stone Mountain, Ga 30083</a>
-</li>
-
-</ul> */}

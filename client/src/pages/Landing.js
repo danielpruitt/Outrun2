@@ -105,7 +105,7 @@ class Landing extends Component {
                     <Container>
                         <Row> 
                             <Col size='s12'>
-                                <h3 className='lazer84 border-bottom scrollspy'>Beers</h3>
+                                <h3 className='lazer84 border-bottom scrollspy'>Beers Coming Soon</h3>
                             </Col>
                         </Row>
                         <Row> 
@@ -115,16 +115,22 @@ class Landing extends Component {
                             <Col size='s7'>
                                 <h5 className='abyssopelagic'>We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
                                     </h5>
-                                    <a className=' btn outrunPink'
-                                    onClick={() => window.open('https://www.patreon.com/outrunbrewingco','_blank')}
-                                    >Become a Patron</a>
+                                
+                            </Col>
+                            <Row>
+                            <Col size='12'>
+                                <a className='center-button btn btn-large right outrunPink'
+                                    onClick={() => window.open('https://www.patreon.com/outrunbrewingco', '_blank')}
+                                >Become a Patron</a>
                             </Col>
                         </Row>
+                        </Row>
+                        
                     </Container>
                 </Section>
 
                 <Parallax
-                    image={require("../images/bottling.jpg")}
+                    image={require("../images/backroom.jpeg")}
                 />
 
                 {/* Our Story */}
@@ -161,7 +167,7 @@ class Landing extends Component {
                 </Section>
 
                 <Parallax
-                    image={require("../images/brewRoom.jpg")}
+                    image={require("../images/bartender.jfif")}
                 />
 
                 {/* Contact */}
@@ -181,7 +187,7 @@ class Landing extends Component {
 
 
                 <Parallax
-                    image={require("../images/brewRoom.jpg")}
+                    image={require("../images/headerlogo.png")}
                 />
 
                 {/* footer, nothing below this */}

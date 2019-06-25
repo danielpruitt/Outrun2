@@ -17,16 +17,24 @@ const Footer1 = () => (
                     <Col size="s8">
                         <div className="center-align white-text">
 
-                            <p onClick={() => window.open('https://www.instagram.com/outrunbrewingco/','_blank')}> <i className="fab fa-instagram"></i>        @OutrunBrewingCo</p>
+                            <div className='clickable' onClick={() => window.open('https://www.instagram.com/outrunbrewingco/', '_blank')}>
+                                
+                                <p> <i className="fab fa-instagram"></i> @OutrunBrewingCo</p>
 
-                            <p onClick={() => window.open('https://www.facebook.com/outrunbrewingco/','_blank')}> <i className="fab fa-facebook-square"></i>facebook.com/OutrunBrewingCo</p>
+                            </div>
+                            <div className='clickable' onClick={() => window.open('https://www.facebook.com/outrunbrewingco/', '_blank')}>
+                                <p> <i className="fab fa-facebook-square"></i>facebook.com/OutrunBrewingCo</p>
+                            </div>
+
 
                             {/* <p><i className="fab fa-twitter-square"></i>@OutrunBrewingCo</p> */}
                         </div>
                     </Col>
 
                     <Col size="s3">
-                        <div className="left-align white-text">
+                        <div className="clickable left-align white-text" 
+                        onClick={() => window.open('https://goo.gl/maps/HqzUoCGs48AexUXA9', '_blank')}
+                        >
                             <p>5368 East Mountain Street</p>
                             <p>Stone Mountain, Ga 30083</p>
 

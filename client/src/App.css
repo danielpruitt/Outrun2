@@ -262,15 +262,23 @@ footer {
   color:white
 }
 
+.center-button { 
+  margin-left:14vw;
+}
+
 /* HOVER   */
 
 button, i, a :hover{
   cursor:pointer;
 }
+.clickable:hover { 
+  cursor:pointer;
+
+}
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 600px) {
   .nav-wrapper { 
-    /* width:102% */
+    width:102%
   }
 }
