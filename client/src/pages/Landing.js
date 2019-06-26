@@ -113,9 +113,29 @@ class Landing extends Component {
                                 <img className='responsive-img' src={require("../images/FollowTheNeon_Sign_Outrun.jpg")} alt='Follow The Neon' />
                             </Col>
                             <Col size='s7'>
-                                <h5 className='abyssopelagic'>We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
+                                <h5 className='abyssopelagic'>Hey beer lovers! Want to take part in some choice membership-only perks with Outrun Brewing Co.? For the new low price of $1000, up to 50 rad individuals will be able to get a beer lovers layaway membership with Outrun. This limited time offer will get you 
+
                                     </h5>
-                                
+                                <ul className='abyssopelagic ul-margin'>
+                                    <li>
+                                        Early access to seasonal and limited-release beers
+                                    </li>
+                                    <li>
+                                    A special Outrun beer mug to keep at the brewery or take home
+A $15,000 beer credit for spending up to $15 daily at Outrun Brewing Co. 
+
+                                    </li>
+                                    <li>
+
+                                    All of the money goes to helping build out our local tasting room 
+
+                                    </li>
+                                    <li>
+                                    Follow the Neon 
+
+                                    </li>
+                                </ul>
+
                             </Col>
                             <Row>
                             <Col size='12'>

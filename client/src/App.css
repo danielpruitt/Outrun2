@@ -75,7 +75,7 @@
 }
 .abyssopelagic  {
   font-family: 'Abyssopelagic';
-  letter-spacing:1px;
+  letter-spacing:2px;
 }
 
 
@@ -209,6 +209,14 @@ used to make the pulse of the neon sign and turns the font color white. */
 }
 .card .card-reveal{
   background-color:#666;
+}
+.ul-margin { 
+  margin-left:4vw;
+
+}
+.ul-margin li{
+  margin-bottom:2vh;
+  font-size:medium
 }
 
 .pt { 
