@@ -5,7 +5,7 @@ import MyParticles from "../Particles/Particles";
 
 
 const Footer1 = () => (
-    <div className="hide-on-med-and-down ">
+    <div className=" ">
         {/* <MyParticles /> */}
 
         <div className="section gradient">
@@ -32,14 +32,19 @@ const Footer1 = () => (
                     </Col>
 
                     <Col size="s3">
-                        <div className="clickable left-align white-text" 
+                        <div className="clickable left-align white-text hide-on-med-and-down" 
                         onClick={() => window.open('https://goo.gl/maps/HqzUoCGs48AexUXA9', '_blank')}
                         >
                             <p>5368 East Mountain Street</p>
                             <p>Stone Mountain, Ga 30083</p>
 
                         </div>
+                        <div className="clickable left-align white-text hide-on-large-and-med" 
+                        onClick={() => window.open('https://goo.gl/maps/HqzUoCGs48AexUXA9', '_blank')}
+                        >
+                            <p>5368 East Mountain Street Stone Mountain, Ga 30083</p>
 
+                        </div>
                     </Col>
 
                 </Row>
