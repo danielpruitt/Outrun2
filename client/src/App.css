@@ -77,8 +77,12 @@
   font-family: 'Abyssopelagic';
   letter-spacing:2px;
 }
-
-
+form label {
+  font-size: 1.2rem;
+}
+.formspree-send {
+  margin-left:2vw;
+}
 
 /* border under headers, can be deleted or added to  */
 .border-bottom { 
