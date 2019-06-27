@@ -67,13 +67,13 @@ class Landing extends Component {
                 {/* <Header /> */}
                 {/* Our Beers */}
                 <Navbar />
-        
+
                 <div id='ourbeers'></div>
                 <br />
 
 
                 <Section>
-                    
+
                     {/* <Container>
                         <Row>
                             <Col size="s12">
@@ -103,17 +103,17 @@ class Landing extends Component {
                     </Container> */}
 
                     <Container>
-                        <Row> 
+                        <Row>
                             <Col size='s12'>
                                 <h3 className='lazer84 border-bottom scrollspy'>Beers Coming Soon</h3>
                             </Col>
                         </Row>
-                        <Row> 
+                        <Row>
                             <Col size='s5'>
                                 <img className='responsive-img' src={require("../images/FollowTheNeon_Sign_Outrun.jpg")} alt='Follow The Neon' />
                             </Col>
                             <Col size='s7'>
-                                <h5 className='abyssopelagic'>Hey beer lovers! Want to take part in some choice membership-only perks with Outrun Brewing Co.? For the new low price of $1000, up to 50 rad individuals will be able to get a beer lovers layaway membership with Outrun. This limited time offer will get you 
+                                <h5 className='abyssopelagic'>Hey beer lovers! Want to take part in some choice membership-only perks with Outrun Brewing Co.? For the new low price of $1000, up to 50 rad individuals will be able to get a beer lovers layaway membership with Outrun. This limited time offer will get you
 
                                     </h5>
                                 <ul className='abyssopelagic ul-margin'>
@@ -121,41 +121,50 @@ class Landing extends Component {
                                         Early access to seasonal and limited-release beers
                                     </li>
                                     <li>
-                                    A special Outrun beer mug to keep at the brewery or take home
-A $15,000 beer credit for spending up to $15 daily at Outrun Brewing Co. 
-
+                                        A special Outrun beer mug to keep at the brewery or take home
+    A $15,000 beer credit for spending up to $15 daily at Outrun Brewing Co.
+    
                                     </li>
                                     <li>
 
-                                    All of the money goes to helping build out our local tasting room 
-
+                                        All of the money goes to helping build out our local tasting room
+    
                                     </li>
                                     <li>
-                                    Follow the Neon 
-
+                                        Follow the Neon
+    
                                     </li>
                                 </ul>
 
                             </Col>
                             <Row>
-                            <Col size='12'>
-                                <a className='center-button btn btn-large right outrunPink'
-                                    onClick={() => window.open('https://www.patreon.com/outrunbrewingco', '_blank')}
-                                >Become a Patron</a>
-                            </Col>
+                                <Col size='12'>
+                                    <a className='center-button btn btn-large right outrunPink'
+                                        onClick={() => window.open('https://www.patreon.com/outrunbrewingco', '_blank')}
+                                    >Become a Patron</a>
+                                </Col>
+                            </Row>
                         </Row>
-                        </Row>
-                        
+
                     </Container>
                 </Section>
 
-                <Parallax
+                {/* <Parallax
                     image={require("../images/backroom.jpeg")}
-                />
+                /> */}
+
+                <Section>
+                    <Container>
+                        <Row>
+
+                        </Row>
+                    </Container>
+                </Section>
+
 
                 {/* Our Story */}
                 <div id='ourstory'> </div>
-                <br/>
+                <br />
                 <Section>
                     <Container>
                         <Row>
@@ -164,10 +173,10 @@ A $15,000 beer credit for spending up to $15 daily at Outrun Brewing Co.
                             </Col>
                         </Row>
                         <Row>
-                            <Col size="s4">
+                            {/* <Col size="s4">
                                 <img className='responsive-img' src={require('../images/Gazelle Logo_Pink.png')} alt='Our Story pic' />
-                            </Col>
-                            <Col size="s8">
+                            </Col> */}
+                            <Col size="s12">
                                 <div>
                                     <h5 className="abyssopelagic ">We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
                                     </h5>
@@ -185,14 +194,26 @@ A $15,000 beer credit for spending up to $15 daily at Outrun Brewing Co.
                         </Row>
                     </Container>
                 </Section>
-
+                {/* 
                 <Parallax
                     image={require("../images/bartender.jfif")}
-                />
+                /> */}
+                
+                <Section>
+                    <Container>
+                        <Row>
+<br/>
+<br/>
+<br/>
+<br/>
+                        </Row>
+                    </Container>
+                </Section>
+
 
                 {/* Contact */}
                 <div id='contact'></div>
-                <br/>
+                <br />
 
                 <Section>
                     <Container>
