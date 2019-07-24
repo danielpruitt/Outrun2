@@ -109,10 +109,10 @@ class Landing extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col size='s5'>
+                            {/* <Col size='s5'>
                                 <img className='responsive-img' src={require("../images/FollowTheNeon_Sign_Outrun.jpg")} alt='Follow The Neon' />
-                            </Col>
-                            <Col size='s7'>
+                            </Col> */}
+                            <Col size='s12'>
                                 <h5 className='abyssopelagic'>Hey beer lovers! Want to take part in some choice membership-only perks with Outrun Brewing Co.? For the new low price of $1000, up to 50 rad individuals will be able to get a beer lovers layaway membership with Outrun. This limited time offer will get you
 
                                     </h5>
@@ -227,9 +227,9 @@ class Landing extends Component {
                 </Section>
 
 
-                <Parallax
+                {/* <Parallax
                     image={require("../images/headerlogo.png")}
-                />
+                /> */}
 
                 {/* footer, nothing below this */}
 
