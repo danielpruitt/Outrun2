@@ -63,7 +63,7 @@ handleSubmit = (event) => {
                         <form  action='https://formspree.io/ryanoutrunbrewing@gmail.com' method='POST'>
                             <Col size="s12">
                                 <div>                 
-                                    <label className=' input-field abyssopelagic' htmlFor="autocomplete-input">Name</label>
+                                    <label className=' input-field din16' htmlFor="autocomplete-input">Name</label>
 
                                     <input type="text" name="name" />
                                     {/* <Form name="contacter" placeholder="Name" onChange={this.handleInputChange} /> */}
@@ -71,7 +71,7 @@ handleSubmit = (event) => {
                             </Col>
                             <Col size="s12">
                                 <div>
-                                    <label className=' input-field abyssopelagic' htmlFor="autocomplete-input">Subject</label>
+                                    <label className=' input-field din16' htmlFor="autocomplete-input">Subject</label>
 
                                     <input type="text" name="subject" className="autocomplete" />
                                     {/* <Form name="email" placeholder="Email" onChange={this.handleInputChange} /> */}
@@ -79,7 +79,7 @@ handleSubmit = (event) => {
                             </Col>
                             <Col size="s12">
                                 <div>      
-                                    <label className=' input-field abyssopelagic' htmlFor="autocomplete-input">Body</label>
+                                    <label className=' input-field din16' htmlFor="autocomplete-input">Body</label>
 
                                     <input type="text" name="body" />
                                     {/* <Form name="email" placeholder="Email" onChange={this.handleInputChange} /> */}
@@ -87,7 +87,7 @@ handleSubmit = (event) => {
                             </Col>
                             <Col size="s12">
                                 <div>
-                                <label className=' input-field abyssopelagic' htmlFor="autocomplete-input">Email</label>
+                                <label className=' input-field din16' htmlFor="autocomplete-input">Email</label>
 
                                 <input type="email" name="_replyto" />
                                     {/* <Form name="question" placeholder="" onChange={this.handleInputChange} /> */}

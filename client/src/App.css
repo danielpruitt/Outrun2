@@ -23,7 +23,10 @@
   font-family: "Abyssopelagic";
   src: url(./fonts/abyssopelagic.ttf);
 }
-
+@font-face {
+  font-family: "din16";
+  src: url(./fonts/Din16Regular.ttf);
+}
 
 /* label color */
 .input-field label {
@@ -76,6 +79,9 @@
 .abyssopelagic  {
   font-family: 'Abyssopelagic';
   letter-spacing:2px;
+}
+.din16 {
+  font-family: 'din16';
 }
 form label {
   font-size: 1.2rem;

@@ -113,10 +113,10 @@ class Landing extends Component {
                                 <img className='responsive-img' src={require("../images/FollowTheNeon_Sign_Outrun.jpg")} alt='Follow The Neon' />
                             </Col> */}
                             <Col size='s12'>
-                                <h5 className='abyssopelagic'>Hey beer lovers! Want to take part in some choice membership-only perks with Outrun Brewing Co.? For the new low price of $1000, up to 50 rad individuals will be able to get a beer lovers layaway membership with Outrun. This limited time offer will get you
+                                <h5 className='din16'>Hey beer lovers! Want to take part in some choice membership-only perks with Outrun Brewing Co.? For the new low price of $1000, up to 50 rad individuals will be able to get a beer lovers layaway membership with Outrun. This limited time offer will get you
 
                                     </h5>
-                                <ul className='abyssopelagic ul-margin'>
+                                <ul className='din16 ul-margin'>
                                     <li>
                                         Early access to seasonal and limited-release beers
                                     </li>
@@ -139,7 +139,7 @@ class Landing extends Component {
                             </Col>
                             <Row>
                                 <Col size='12'>
-                                    <a className='center-button btn btn-large right outrunPink'
+                                    <a className='center-button btn btn-large right din16 outrunPink'
                                         onClick={() => window.open('https://www.patreon.com/outrunbrewingco', '_blank')}
                                     >Become a Patron</a>
                                 </Col>
@@ -178,9 +178,9 @@ class Landing extends Component {
                             </Col> */}
                             <Col size="s12">
                                 <div>
-                                    <h5 className="abyssopelagic ">We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
+                                    <h5 className="din16 ">We are a brewer owned and operated small-scale production brewery that focuses on approachable and highly drinkable small-batch brews. We put our own spin on a variety of styles, old and new. Our beer is brewed in house and only available in our taproom. We take our beer seriously, but not ourselves, and are dedicated to brewing rarities, untasted originals, and re-imagined favorites.
                                     </h5>
-                                    <h4 className='abyssopelagic '>Remember to #followtheneon</h4>
+                                    <h4 className='din16 '>Remember to #followtheneon</h4>
 
                                 </div>
                             </Col>
@@ -189,7 +189,7 @@ class Landing extends Component {
                             <Col size="s8">
                             </Col>
                             <Col size="s4">
-                                {/* <Link className='abyssopelagic' to={"/ourbrewers"}><h5>Meet our brewers.</h5></Link> */}
+                                {/* <Link className='din16' to={"/ourbrewers"}><h5>Meet our brewers.</h5></Link> */}
                             </Col>
                         </Row>
                     </Container>

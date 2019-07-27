@@ -15,7 +15,7 @@ const Footer1 = () => (
 
                     {/* insta, facebook, twitter */}
                     <Col size="s8">
-                        <div className="center-align white-text">
+                        <div className="din16 center-align white-text">
 
                             <div className='clickable' onClick={() => window.open('https://www.instagram.com/outrunbrewingco/', '_blank')}>
                                 
@@ -23,7 +23,8 @@ const Footer1 = () => (
 
                             </div>
                             <div className='clickable' onClick={() => window.open('https://www.facebook.com/outrunbrewingco/', '_blank')}>
-                                <p> <i className="fab fa-facebook-square"></i>facebook.com/OutrunBrewingCo</p>
+                               
+                                <p><span> <i className="fab fa-facebook-square"></i></span>   facebook.com/OutrunBrewingCo</p>
                             </div>
 
 
