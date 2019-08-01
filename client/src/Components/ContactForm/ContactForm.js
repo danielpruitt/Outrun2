@@ -105,7 +105,7 @@ handleSubmit = (event) => {
                     <Row>
                         <Col size='s12'>
                             <div className=' center-align'>
-                                <a className="waves-effect waves-light btn btn-large modal-trigger outrunPink" href="#modal1">Subscribe</a>
+                                <h4 className="din16 modal-trigger clickable" href="#modal1">Subscribe</h4>
                             </div>
                         
                             <div id="modal1" className="modal">
