@@ -9,6 +9,7 @@
     "react": "^16.7.0",
     "react-animated-modal": "^1.1.1",
     "react-dom": "^16.7.0",
+    "react-mailchimp-subscribe": "^2.1.0",
     "react-particles-js": "^2.4.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",

@@ -4,6 +4,7 @@ import Container from "../Grid/Container";
 import Row from "../Grid/Row";
 import Col from "../Grid/Col";
 import SendButton from "../Button/SendButton";
+import Demo from './MailchimpForm';
 import Axios from "axios";
 
 class ContactForm extends Component {
@@ -94,18 +95,32 @@ handleSubmit = (event) => {
                                 </div>
                             </Col>
                             <Row>
-                                <Col>
+                                <Col >
                                     <button type='submit' value='send' className='btn formspree-send outrunPink'>Send</button>
-                                </Col>
+                                </Col>       
                             </Row>
                         </form>
 
                     </Row>
-                    {/* <Row>
-                        <Col>
-                            <SendButton onClick={this.handleSubmit} /> 
-                        </Col> 
-                    </Row> */}
+                    <Row>
+                        <Col size='s12'>
+                            <div className=' center-align'>
+                                <a className="waves-effect waves-light btn btn-large modal-trigger outrunPink" href="#modal1">Subscribe</a>
+                            </div>
+                        
+                            <div id="modal1" className="modal">
+                                <div>
+
+                                    <a href="#!" className="modal-close-x modal-close waves-effect waves-green btn-flat din16">X</a>
+
+                                </div>
+                                <div className="modal-content din16">
+                                    <h4>Follow The Neon</h4>
+                                    <Demo />
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
                 </Container>
             </div>
         )

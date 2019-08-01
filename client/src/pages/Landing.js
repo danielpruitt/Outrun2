@@ -13,6 +13,7 @@ import CustomCard from "../Components/Card/CustomCard";
 import { Link } from "react-router-dom";
 import ContactForm from "../Components/ContactForm/ContactForm";
 import MobileNav from "../Components/Navbar/Sidenav.1";
+import Demo from '../Components/ContactForm/MailchimpForm';
 
 // trying out this image card instead of a dynamic card
 // import ImageCard from "../Components/Card/ImageCard";
@@ -222,8 +223,32 @@ class Landing extends Component {
                                 <h3 className="lazer84 border-bottom  scrollspy contact" id="">Contact</h3>
                             </Col>
                         </Row>
+                        <Row>
+                            <Col size="s12">
+                                <ContactForm />
+                            </Col>
+                        </Row>
+                        {/* <Row>
+                
+                            <Col size='s4'>
+                            <a className="waves-effect waves-light btn modal-trigger outrunPink" href="#modal1">Subscribe</a>
+                            <div id="modal1" className="modal">
+                                <div> 
+                                
+                                <a href="#!" className="modal-close-x modal-close waves-effect waves-green btn-flat din16">X</a>
+
+                                </div>
+                                    <div className="modal-content din16">
+                                        <h4>Follow The Neon</h4>
+                                        <Demo />
+                                    </div>
+                                </div>
+                                
+                            </Col>
+
+                        </Row> */}
                     </Container>
-                    <ContactForm />
+                    {/* <ContactForm /> */}
                 </Section>
 
 
