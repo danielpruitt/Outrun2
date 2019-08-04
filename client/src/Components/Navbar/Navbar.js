@@ -47,8 +47,13 @@ const Navbar = () => (
                             <a className="white-text  text-darken-4 right flow-text" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <img className="  brandLogoFixOnSmall" alt="OutrunNavbarLogo" src={require("../../images/Outrun Logo_Black.png")} />
-                
+                    <div className='hide-on-small-only'>
+                        <img className="brandLogoFixOnMed" alt="OutrunNavbarLogo" src={require("../../images/Outrun Logo_Black.png")} />
+                    </div>
+                    <div className='hide-on-med-and-up'>
+                        <img className="brandLogoFixOnSmall" alt="OutrunNavbarLogo" src={require("../../images/Outrun Logo_Black.png")} />
+                    </div>
+
                 </div>
             </nav>
         </div>
