@@ -146,7 +146,7 @@ class Landing extends Component {
                             <div className='center-align'>
                             <button className=' btn btn-large center-align din16 outrunPink'
                                     onClick={() => window.open('https://www.indiegogo.com/projects/outrun-brewing-company/#/', '_blank')}
-                                >Become a Patron</button>
+                                >INDIEGOGO</button>
                                 
                             </div>
                             
