@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "../Grid/Row"
 import Col from "../Grid/Col";
-import MyParticles from "../Particles/Particles";
+// import MyParticles from "../Particles/Particles";
 
 
 const Footer1 = () => (

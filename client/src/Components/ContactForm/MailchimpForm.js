@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-import Container from '../Grid/Container';
 import Row from '../Grid/Row';
 import Col from '../Grid/Col';
 
@@ -80,7 +79,6 @@ const CustomForm = ({ status, message, onValidated }) => {
     );
 };
 
-const url = 'https://outrunbrewingco.us3.list-manage.com/subscribe/post?u=2f57f101819640b330c446189&amp;id=c69ec2c0e60';
 class Demo extends Component {
     render() {
         const url = 'https://outrunbrewingco.us3.list-manage.com/subscribe/post?u=2f57f101819640b330c446189&amp;id=c69ec2c0e6';

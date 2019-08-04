@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nav.css"
-import MobileNav from "./Sidenav.1";
+
 const Navbar = () => (
 
     <div className='stickyNav'>

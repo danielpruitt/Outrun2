@@ -3,17 +3,17 @@ import Col from "../Components/Grid/Col";
 import Container from "../Components/Grid/Container";
 import Row from "../Components/Grid/Row";
 import Section from "../Components/Grid/Section";
-import Parallax from "../Components/Parallax/Parallax";
+// import Parallax from "../Components/Parallax/Parallax";
 import Footer from "../Components/Footer/Footer1";
 import Navbar from "../Components/Navbar/Navbar";
 // import RevealCard from "../Components/Card/Card";
 import API from "../utils/API";
-import Header from "../Components/Header/header";
-import CustomCard from "../Components/Card/CustomCard";
-import { Link } from "react-router-dom";
+// import Header from "../Components/Header/header";
+// import CustomCard from "../Components/Card/CustomCard";
+// import { Link } from "react-router-dom";
 import ContactForm from "../Components/ContactForm/ContactForm";
-import MobileNav from "../Components/Navbar/Sidenav.1";
-import Demo from '../Components/ContactForm/MailchimpForm';
+// import MobileNav from "../Components/Navbar/Sidenav.1";
+// import Demo from '../Components/ContactForm/MailchimpForm';
 
 // trying out this image card instead of a dynamic card
 // import ImageCard from "../Components/Card/ImageCard";
@@ -123,7 +123,7 @@ class Landing extends Component {
                                     </li>
                                     <li>
                                         A special Outrun beer mug to keep at the brewery or take home
-    A $15,000 beer credit for spending up to $15 daily at Outrun Brewing Co.
+    a $15,000 beer credit for spending up to $15 daily at Outrun Brewing Co.
     
                                     </li>
                                     <li>
@@ -138,15 +138,20 @@ class Landing extends Component {
                                 </ul>
 
                             </Col>
-                            <Row>
-                                <Col size='12'>
-                                    <a className='center-button btn btn-large right din16 outrunPink'
-                                        onClick={() => window.open('https://www.patreon.com/outrunbrewingco', '_blank')}
-                                    >Become a Patron</a>
-                                </Col>
-                            </Row>
+                        
                         </Row>
-
+                        <Row>
+                            <Col size='s12'>
+                            
+                            <div className='center-align'>
+                            <button className=' btn btn-large center-align din16 outrunPink'
+                                    onClick={() => window.open('https://www.indiegogo.com/projects/outrun-brewing-company/#/', '_blank')}
+                                >Become a Patron</button>
+                                
+                            </div>
+                            
+                            </Col>
+                        </Row>
                     </Container>
                 </Section>
 

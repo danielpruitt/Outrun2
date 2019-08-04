@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Form from "../Form/Form";
+// import Form from "../Form/Form";
 import Container from "../Grid/Container";
 import Row from "../Grid/Row";
 import Col from "../Grid/Col";
-import SendButton from "../Button/SendButton";
+// import SendButton from "../Button/SendButton";
 import Demo from './MailchimpForm';
 import Axios from "axios";
 
